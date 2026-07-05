@@ -1,0 +1,29 @@
+# Virtual environment
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+
+# OSMnx / downloaded cache
+cache/
+
+
+# Environment variables / API keys
+.env
+
+
+# VS Code settings
+.vscode/
+
+
+# OS files
+.DS_Store
+Thumbs.db
+
+
+# Generated output files (optional)
+data/*.html

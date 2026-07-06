@@ -25,5 +25,3 @@ cache/
 Thumbs.db
 
 
-# Generated output files (optional)
-data/*.html

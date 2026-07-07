@@ -1,0 +1,13 @@
+{
+    "recommended_entry": "Road with lowest congestion",
+    "avoid_entry": "Bellahalli Main Road",
+    "reasons": [
+        "COMMERCIAL zone creates specific traffic patterns",
+        "4 nearby traffic signals affect movement flow"
+    ],
+    "suggestions": [
+        "Separate pedestrian and vehicle access",
+        "Avoid entry near high conflict intersections",
+        "Plan circulation considering peak-hour movement"
+    ]
+}

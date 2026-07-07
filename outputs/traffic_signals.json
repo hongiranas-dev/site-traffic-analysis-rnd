@@ -1,0 +1,22 @@
+[
+    {
+        "latitude": 13.1220704,
+        "longitude": 77.6305434,
+        "type": "traffic_signal"
+    },
+    {
+        "latitude": 13.1222083,
+        "longitude": 77.6307811,
+        "type": "traffic_signal"
+    },
+    {
+        "latitude": 13.1223335,
+        "longitude": 77.6305338,
+        "type": "traffic_signal"
+    },
+    {
+        "latitude": 13.1222587,
+        "longitude": 77.6303079,
+        "type": "traffic_signal"
+    }
+]

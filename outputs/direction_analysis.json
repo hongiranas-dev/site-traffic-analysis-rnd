@@ -1,0 +1,182 @@
+[
+    {
+        "road_name": "Bellahalli Main Road",
+        "direction": "North-West",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Bellahalli Main Road",
+        "direction": "South-West",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Unnamed Road",
+        "direction": "South-West",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Unnamed Road",
+        "direction": "South-East",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Unnamed Road",
+        "direction": "South-East",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Bagalur Road",
+        "direction": "North-West",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Bagalur Road",
+        "direction": "North-East",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Bagalur Road",
+        "direction": "North-East",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Bagalur Road",
+        "direction": "North-West",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Bagalur Road",
+        "direction": "North-West",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Bagalur Road",
+        "direction": "North-West",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Bagalur Road",
+        "direction": "North-West",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Bagalur Road",
+        "direction": "North-West",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Bagalur Road",
+        "direction": "North-West",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Bagalur Road",
+        "direction": "North-West",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Bagalur Road",
+        "direction": "North-West",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Bagalur Road",
+        "direction": "North-West",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Unnamed Road",
+        "direction": "North-East",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Bagalur Road",
+        "direction": "North-East",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Unnamed Road",
+        "direction": "North-East",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Bagalur Road",
+        "direction": "North-East",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Unnamed Road",
+        "direction": "North-East",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Unnamed Road",
+        "direction": "South-West",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Bellahalli Main Road",
+        "direction": "South-West",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Bagalur Road",
+        "direction": "North-West",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Bagalur Road",
+        "direction": "North-East",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Bagalur Road",
+        "direction": "North-West",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Bagalur Road",
+        "direction": "North-West",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Bagalur Road",
+        "direction": "North-West",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Bagalur Road",
+        "direction": "North-West",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    }
+]

@@ -1,0 +1,10 @@
+{
+    "pedestrian_score": 1040,
+    "pedestrian_level": "HIGH PEDESTRIAN ACTIVITY",
+    "factors": {
+        "bus_stops": 10,
+        "public_places": 56,
+        "shops": 56
+    },
+    "recommendation": "Provide separate pedestrian pathways and safe crossings"
+}

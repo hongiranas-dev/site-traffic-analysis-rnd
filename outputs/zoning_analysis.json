@@ -1,0 +1,6 @@
+{
+    "zone_type": "COMMERCIAL",
+    "residential_score": 10,
+    "commercial_score": 1276,
+    "traffic_multiplier": 1.5
+}

@@ -1,0 +1,16 @@
+{
+    "recommended_entry": "North-West side via Bellahalli Main Road",
+    "avoid_entry": "North-West side via Bagalur Road",
+    "reasons": [
+        "Bagalur Road has comparatively higher circulation risk",
+        "COMMERCIAL land-use increases movement demand",
+        "4 nearby signals may create vehicle queues",
+        "HIGH PEDESTRIAN ACTIVITY requires pedestrian planning"
+    ],
+    "suggestions": [
+        "Separate pedestrian and vehicle access",
+        "Provide safe pedestrian crossing zones",
+        "Avoid main entry near high movement roads",
+        "Design access considering peak hour traffic"
+    ]
+}

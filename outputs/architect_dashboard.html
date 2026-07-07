@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7f625011a3ffad86e0b05e9b63eb16f4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7f625011a3ffad86e0b05e9b63eb16f4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7f625011a3ffad86e0b05e9b63eb16f4 = L.map(
+                "map_7f625011a3ffad86e0b05e9b63eb16f4",
+                {
+                    center: [13.1168, 77.6347],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6eaa69e87cd20a4bf55f9d9372ed93cf = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6eaa69e87cd20a4bf55f9d9372ed93cf.addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+            var marker_a631d0c32f88b22fbc7a224d9b53e25c = L.marker(
+                [13.1168, 77.6347],
+                {
+}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+            var icon_404cf044b5a29ac0b330597b9ca08403 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86127391df7272225eb556f8a805a760 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0237d80f5689ec4fa7fb800d38bc0c92 = $(`<div id="html_0237d80f5689ec4fa7fb800d38bc0c92" style="width: 100.0%; height: 100.0%;">PROJECT SITE</div>`)[0];
+                popup_86127391df7272225eb556f8a805a760.setContent(html_0237d80f5689ec4fa7fb800d38bc0c92);
+            
+        
+
+        marker_a631d0c32f88b22fbc7a224d9b53e25c.bindPopup(popup_86127391df7272225eb556f8a805a760)
+        ;
+
+        
+    
+    
+                marker_a631d0c32f88b22fbc7a224d9b53e25c.setIcon(icon_404cf044b5a29ac0b330597b9ca08403);
+            
+    
+            var circle_marker_542260e8ddade93f7e8ba9d43a1aa517 = L.circleMarker(
+                [13.121879510860369, 77.63070904160077],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_bfbf6bde983e5b9a0a4a16b2f26e4907 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_71be653b235e25c4db155613d1716c27 = $(`<div id="html_71be653b235e25c4db155613d1716c27" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bellahalli Main Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_bfbf6bde983e5b9a0a4a16b2f26e4907.setContent(html_71be653b235e25c4db155613d1716c27);
+            
+        
+
+        circle_marker_542260e8ddade93f7e8ba9d43a1aa517.bindPopup(popup_bfbf6bde983e5b9a0a4a16b2f26e4907)
+        ;
+
+        
+    
+    
+            var circle_marker_8ca8a995acf0d7819fd21c8fda912d85 = L.circleMarker(
+                [13.110352299999999, 77.63377095],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_14e11c15ce351ffac974afa7ae8480b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cfc1977bf1714a3f7b690e6f77228ba7 = $(`<div id="html_cfc1977bf1714a3f7b690e6f77228ba7" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bellahalli Main Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_14e11c15ce351ffac974afa7ae8480b5.setContent(html_cfc1977bf1714a3f7b690e6f77228ba7);
+            
+        
+
+        circle_marker_8ca8a995acf0d7819fd21c8fda912d85.bindPopup(popup_14e11c15ce351ffac974afa7ae8480b5)
+        ;
+
+        
+    
+    
+            var circle_marker_ea4a17856441efaba94ca4a0aa6c8d6e = L.circleMarker(
+                [13.10992075, 77.63364899999999],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_c6c231489aa6ede1b35dce7726634c2d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_97b9a3e24b09b74931bd20caa11a3ffa = $(`<div id="html_97b9a3e24b09b74931bd20caa11a3ffa" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Unnamed Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_c6c231489aa6ede1b35dce7726634c2d.setContent(html_97b9a3e24b09b74931bd20caa11a3ffa);
+            
+        
+
+        circle_marker_ea4a17856441efaba94ca4a0aa6c8d6e.bindPopup(popup_c6c231489aa6ede1b35dce7726634c2d)
+        ;
+
+        
+    
+    
+            var circle_marker_40fe60c5376b10433d112a50fc16aecf = L.circleMarker(
+                [13.10979400072864, 77.6359157912144],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_38c1b738b8ac5268288e892ef8c4f05b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09e3aeee516ab5a75aae9276d87d4f9f = $(`<div id="html_09e3aeee516ab5a75aae9276d87d4f9f" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Unnamed Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_38c1b738b8ac5268288e892ef8c4f05b.setContent(html_09e3aeee516ab5a75aae9276d87d4f9f);
+            
+        
+
+        circle_marker_40fe60c5376b10433d112a50fc16aecf.bindPopup(popup_38c1b738b8ac5268288e892ef8c4f05b)
+        ;
+
+        
+    
+    
+            var circle_marker_665471ac2b51e8a3d673f64085ee817f = L.circleMarker(
+                [13.11072444816549, 77.64175284502103],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_d125d8f826407baabcf89723fc987e5e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c56043880579bb99f31ef4d76c217ab4 = $(`<div id="html_c56043880579bb99f31ef4d76c217ab4" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Unnamed Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_d125d8f826407baabcf89723fc987e5e.setContent(html_c56043880579bb99f31ef4d76c217ab4);
+            
+        
+
+        circle_marker_665471ac2b51e8a3d673f64085ee817f.bindPopup(popup_d125d8f826407baabcf89723fc987e5e)
+        ;
+
+        
+    
+    
+            var circle_marker_96563d97eb9ce19f0132723e6eb12efc = L.circleMarker(
+                [13.121811611542055, 77.62576400274297],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_6d7b72e20b92d5028fc3ebb958e000d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1481f817a24b3e6751159051a3f11b12 = $(`<div id="html_1481f817a24b3e6751159051a3f11b12" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_6d7b72e20b92d5028fc3ebb958e000d7.setContent(html_1481f817a24b3e6751159051a3f11b12);
+            
+        
+
+        circle_marker_96563d97eb9ce19f0132723e6eb12efc.bindPopup(popup_6d7b72e20b92d5028fc3ebb958e000d7)
+        ;
+
+        
+    
+    
+            var circle_marker_e7dc81b6a15e0de27a52a34ec91f21d5 = L.circleMarker(
+                [13.12392075498594, 77.64182501880289],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_7063ae52ac0c9d381aacb93c1febf1cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf0630427d0e69b66553105fd041dfa1 = $(`<div id="html_bf0630427d0e69b66553105fd041dfa1" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_7063ae52ac0c9d381aacb93c1febf1cf.setContent(html_bf0630427d0e69b66553105fd041dfa1);
+            
+        
+
+        circle_marker_e7dc81b6a15e0de27a52a34ec91f21d5.bindPopup(popup_7063ae52ac0c9d381aacb93c1febf1cf)
+        ;
+
+        
+    
+    
+            var circle_marker_bdbf3f92562d2d19888089cd656c510a = L.circleMarker(
+                [13.1237458, 77.6403187],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_311915f3746f3282c8ced9f90f624a09 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f7a846b35b2d77dc9a663d6804aee1b4 = $(`<div id="html_f7a846b35b2d77dc9a663d6804aee1b4" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_311915f3746f3282c8ced9f90f624a09.setContent(html_f7a846b35b2d77dc9a663d6804aee1b4);
+            
+        
+
+        circle_marker_bdbf3f92562d2d19888089cd656c510a.bindPopup(popup_311915f3746f3282c8ced9f90f624a09)
+        ;
+
+        
+    
+    
+            var circle_marker_44b85d3c8b9a2c290833e5de5d7e2ffa = L.circleMarker(
+                [13.1219117, 77.62589135],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_bd7bc73b1cfc870b896b6b1de0467ef8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61bb24cbcf22d7c5b67cf705ffd862c3 = $(`<div id="html_61bb24cbcf22d7c5b67cf705ffd862c3" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_bd7bc73b1cfc870b896b6b1de0467ef8.setContent(html_61bb24cbcf22d7c5b67cf705ffd862c3);
+            
+        
+
+        circle_marker_44b85d3c8b9a2c290833e5de5d7e2ffa.bindPopup(popup_bd7bc73b1cfc870b896b6b1de0467ef8)
+        ;
+
+        
+    
+    
+            var circle_marker_d65dba99d9ae33bad634393689e51122 = L.circleMarker(
+                [13.122408799999999, 77.6316593],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_3e9f72a37a6ef5c413db956a0f4c68dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad9ee23f8591b9caf3776d382bddfab6 = $(`<div id="html_ad9ee23f8591b9caf3776d382bddfab6" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_3e9f72a37a6ef5c413db956a0f4c68dd.setContent(html_ad9ee23f8591b9caf3776d382bddfab6);
+            
+        
+
+        circle_marker_d65dba99d9ae33bad634393689e51122.bindPopup(popup_3e9f72a37a6ef5c413db956a0f4c68dd)
+        ;
+
+        
+    
+    
+            var circle_marker_86b11651775f9bd05f44e55491eb37d5 = L.circleMarker(
+                [13.12198045, 77.62675060000001],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_22f4e31777c3412666997e767016994b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a4a9013e8b4e79e8ab8cb513cf86ecc = $(`<div id="html_6a4a9013e8b4e79e8ab8cb513cf86ecc" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_22f4e31777c3412666997e767016994b.setContent(html_6a4a9013e8b4e79e8ab8cb513cf86ecc);
+            
+        
+
+        circle_marker_86b11651775f9bd05f44e55491eb37d5.bindPopup(popup_22f4e31777c3412666997e767016994b)
+        ;
+
+        
+    
+    
+            var circle_marker_f45e63e6dad4e146bd5e0de23ba480cf = L.circleMarker(
+                [13.1219593, 77.62641225],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_5ccc98013e161f28789964be41a2b898 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_166666196aac7452f87704a4c090d851 = $(`<div id="html_166666196aac7452f87704a4c090d851" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_5ccc98013e161f28789964be41a2b898.setContent(html_166666196aac7452f87704a4c090d851);
+            
+        
+
+        circle_marker_f45e63e6dad4e146bd5e0de23ba480cf.bindPopup(popup_5ccc98013e161f28789964be41a2b898)
+        ;
+
+        
+    
+    
+            var circle_marker_fd723495a8364aa7835b34f4660942f1 = L.circleMarker(
+                [13.12200855, 77.62758464999999],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_9d10e1275f4015ea194896aeec55224c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_38254f7c880f69fb50094ba2ff3d1361 = $(`<div id="html_38254f7c880f69fb50094ba2ff3d1361" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_9d10e1275f4015ea194896aeec55224c.setContent(html_38254f7c880f69fb50094ba2ff3d1361);
+            
+        
+
+        circle_marker_fd723495a8364aa7835b34f4660942f1.bindPopup(popup_9d10e1275f4015ea194896aeec55224c)
+        ;
+
+        
+    
+    
+            var circle_marker_4a5b13689057e77fd740299e74aabf84 = L.circleMarker(
+                [13.121938368474217, 77.62789816195713],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_1ca98eb576d91d6124997ce1d5645bc9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ae327bb542b148133908d197070dd804 = $(`<div id="html_ae327bb542b148133908d197070dd804" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_1ca98eb576d91d6124997ce1d5645bc9.setContent(html_ae327bb542b148133908d197070dd804);
+            
+        
+
+        circle_marker_4a5b13689057e77fd740299e74aabf84.bindPopup(popup_1ca98eb576d91d6124997ce1d5645bc9)
+        ;
+
+        
+    
+    
+            var circle_marker_93226fd2b7085d09416329594df1be6a = L.circleMarker(
+                [13.122141232873908, 77.6292485939261],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_689197cca736ecf83525e481330dbf21 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8f52da84835cdf03ba20374436829eee = $(`<div id="html_8f52da84835cdf03ba20374436829eee" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_689197cca736ecf83525e481330dbf21.setContent(html_8f52da84835cdf03ba20374436829eee);
+            
+        
+
+        circle_marker_93226fd2b7085d09416329594df1be6a.bindPopup(popup_689197cca736ecf83525e481330dbf21)
+        ;
+
+        
+    
+    
+            var circle_marker_4d80a56a4e2b7d349fef9e7e28c1c41f = L.circleMarker(
+                [13.122235700000001, 77.63008604999999],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_3418ed9ec3db39643c07f77565118bf3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6c1406b3051cc0e589ec1c5e92325341 = $(`<div id="html_6c1406b3051cc0e589ec1c5e92325341" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_3418ed9ec3db39643c07f77565118bf3.setContent(html_6c1406b3051cc0e589ec1c5e92325341);
+            
+        
+
+        circle_marker_4d80a56a4e2b7d349fef9e7e28c1c41f.bindPopup(popup_3418ed9ec3db39643c07f77565118bf3)
+        ;
+
+        
+    
+    
+            var circle_marker_3af9998fbe2eefb76f4f32a6ef51b206 = L.circleMarker(
+                [13.1223438, 77.63103435],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_edff7b9810ed11aba2ad5207d1ef904f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a86a74c0550a04490e0f86a68f280a04 = $(`<div id="html_a86a74c0550a04490e0f86a68f280a04" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_edff7b9810ed11aba2ad5207d1ef904f.setContent(html_a86a74c0550a04490e0f86a68f280a04);
+            
+        
+
+        circle_marker_3af9998fbe2eefb76f4f32a6ef51b206.bindPopup(popup_edff7b9810ed11aba2ad5207d1ef904f)
+        ;
+
+        
+    
+    
+            var circle_marker_5f639533c66ce244dc2190d486dc8bc4 = L.circleMarker(
+                [13.1235331, 77.6393429],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_91ffd9fd0582029f948609d4f3f3c06b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8caad395a169f449347ce156e26d8703 = $(`<div id="html_8caad395a169f449347ce156e26d8703" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Unnamed Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_91ffd9fd0582029f948609d4f3f3c06b.setContent(html_8caad395a169f449347ce156e26d8703);
+            
+        
+
+        circle_marker_5f639533c66ce244dc2190d486dc8bc4.bindPopup(popup_91ffd9fd0582029f948609d4f3f3c06b)
+        ;
+
+        
+    
+    
+            var circle_marker_024b578979a58e4609170e3addda8ad9 = L.circleMarker(
+                [13.123275682604262, 77.63806344132242],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_99f56ed0a91cda27aece9cbf50f41fd9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c2380d23af0abe84dc6d9e3e164ef7d = $(`<div id="html_9c2380d23af0abe84dc6d9e3e164ef7d" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_99f56ed0a91cda27aece9cbf50f41fd9.setContent(html_9c2380d23af0abe84dc6d9e3e164ef7d);
+            
+        
+
+        circle_marker_024b578979a58e4609170e3addda8ad9.bindPopup(popup_99f56ed0a91cda27aece9cbf50f41fd9)
+        ;
+
+        
+    
+    
+            var circle_marker_89db7cf7e11af1b60028f3ad66c16cc8 = L.circleMarker(
+                [13.1237904, 77.63934904999999],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_546a6435656b47b7c75cf3f1a32f31f9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ba03d7fec925fac4721f9239226ef0a = $(`<div id="html_8ba03d7fec925fac4721f9239226ef0a" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Unnamed Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_546a6435656b47b7c75cf3f1a32f31f9.setContent(html_8ba03d7fec925fac4721f9239226ef0a);
+            
+        
+
+        circle_marker_89db7cf7e11af1b60028f3ad66c16cc8.bindPopup(popup_546a6435656b47b7c75cf3f1a32f31f9)
+        ;
+
+        
+    
+    
+            var circle_marker_77c1f7941d8141147ba7b15f2f0a0d34 = L.circleMarker(
+                [13.12360705, 77.63958615],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_0e9feed9f145f8f26a45bdfad37ff1b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a270e7155ed18d54373fb453033077c6 = $(`<div id="html_a270e7155ed18d54373fb453033077c6" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_0e9feed9f145f8f26a45bdfad37ff1b9.setContent(html_a270e7155ed18d54373fb453033077c6);
+            
+        
+
+        circle_marker_77c1f7941d8141147ba7b15f2f0a0d34.bindPopup(popup_0e9feed9f145f8f26a45bdfad37ff1b9)
+        ;
+
+        
+    
+    
+            var circle_marker_a9277175298a09d3abb71965f3eb24a8 = L.circleMarker(
+                [13.1235331, 77.6393429],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_770b2392d23179b9712176eae235f5b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d20981dfcd619593426ad4260954bcd = $(`<div id="html_7d20981dfcd619593426ad4260954bcd" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Unnamed Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_770b2392d23179b9712176eae235f5b3.setContent(html_7d20981dfcd619593426ad4260954bcd);
+            
+        
+
+        circle_marker_a9277175298a09d3abb71965f3eb24a8.bindPopup(popup_770b2392d23179b9712176eae235f5b3)
+        ;
+
+        
+    
+    
+            var circle_marker_0e690b2afdc64abbf0a1ed8d344ee0ea = L.circleMarker(
+                [13.10992075, 77.63364899999999],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_cd2c28e79c7754087b95b00fd43fef4a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00877981fa2a260fa565675f0fa07de3 = $(`<div id="html_00877981fa2a260fa565675f0fa07de3" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Unnamed Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_cd2c28e79c7754087b95b00fd43fef4a.setContent(html_00877981fa2a260fa565675f0fa07de3);
+            
+        
+
+        circle_marker_0e690b2afdc64abbf0a1ed8d344ee0ea.bindPopup(popup_cd2c28e79c7754087b95b00fd43fef4a)
+        ;
+
+        
+    
+    
+            var circle_marker_44673776d62c02978fdbc7e173211339 = L.circleMarker(
+                [13.11028115466103, 77.63365062013224],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_4ad6eeb0c9bc83d4ef10c751d3b2b939 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20bec2f06d5a1550d1d11d8be85ccc67 = $(`<div id="html_20bec2f06d5a1550d1d11d8be85ccc67" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bellahalli Main Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_4ad6eeb0c9bc83d4ef10c751d3b2b939.setContent(html_20bec2f06d5a1550d1d11d8be85ccc67);
+            
+        
+
+        circle_marker_44673776d62c02978fdbc7e173211339.bindPopup(popup_4ad6eeb0c9bc83d4ef10c751d3b2b939)
+        ;
+
+        
+    
+    
+            var circle_marker_4fd1575cf41340002f5d4c93530b0385 = L.circleMarker(
+                [13.12183625, 77.62611005],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_b39161147cdf0100b0ec4ad7dc1826f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cefb59ede725d2aa386df27ccbe52326 = $(`<div id="html_cefb59ede725d2aa386df27ccbe52326" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_b39161147cdf0100b0ec4ad7dc1826f1.setContent(html_cefb59ede725d2aa386df27ccbe52326);
+            
+        
+
+        circle_marker_4fd1575cf41340002f5d4c93530b0385.bindPopup(popup_b39161147cdf0100b0ec4ad7dc1826f1)
+        ;
+
+        
+    
+    
+            var circle_marker_069015cab3638cf3dd161cc8ca2c6c96 = L.circleMarker(
+                [13.12334546159691, 77.63806191494652],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_4b1bd498269e1cab3d1df49550a8d78e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d5b76741243f832edca94bb62ef5b4e = $(`<div id="html_3d5b76741243f832edca94bb62ef5b4e" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_4b1bd498269e1cab3d1df49550a8d78e.setContent(html_3d5b76741243f832edca94bb62ef5b4e);
+            
+        
+
+        circle_marker_069015cab3638cf3dd161cc8ca2c6c96.bindPopup(popup_4b1bd498269e1cab3d1df49550a8d78e)
+        ;
+
+        
+    
+    
+            var circle_marker_d3fac86f2acacfa043293d5af5fa0abf = L.circleMarker(
+                [13.122522667786958, 77.63370090701544],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_a142166ab2bd5f73766668827e6bb70b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_46cd982faf409ecf01d8fef900f16f0e = $(`<div id="html_46cd982faf409ecf01d8fef900f16f0e" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_a142166ab2bd5f73766668827e6bb70b.setContent(html_46cd982faf409ecf01d8fef900f16f0e);
+            
+        
+
+        circle_marker_d3fac86f2acacfa043293d5af5fa0abf.bindPopup(popup_a142166ab2bd5f73766668827e6bb70b)
+        ;
+
+        
+    
+    
+            var circle_marker_216afdb1b5896e80ca16f7f7bdbad299 = L.circleMarker(
+                [13.12198965, 77.62707385],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_3033ae7dd1a0e76029a308da881242df = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_22e08b13c6224dbc039053ee86a798bd = $(`<div id="html_22e08b13c6224dbc039053ee86a798bd" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_3033ae7dd1a0e76029a308da881242df.setContent(html_22e08b13c6224dbc039053ee86a798bd);
+            
+        
+
+        circle_marker_216afdb1b5896e80ca16f7f7bdbad299.bindPopup(popup_3033ae7dd1a0e76029a308da881242df)
+        ;
+
+        
+    
+    
+            var circle_marker_f91a9c05a0752a7c0cbe72033f167518 = L.circleMarker(
+                [13.121997865447938, 77.62736004954735],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_ca256a4853cda0ba1a74ad72ea1d8145 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_497ac36a6c80e94f6498918213055ef5 = $(`<div id="html_497ac36a6c80e94f6498918213055ef5" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_ca256a4853cda0ba1a74ad72ea1d8145.setContent(html_497ac36a6c80e94f6498918213055ef5);
+            
+        
+
+        circle_marker_f91a9c05a0752a7c0cbe72033f167518.bindPopup(popup_ca256a4853cda0ba1a74ad72ea1d8145)
+        ;
+
+        
+    
+    
+            var circle_marker_a99df435c6bd4235e7c3145b6bf2e06d = L.circleMarker(
+                [13.122020800000001, 77.627815],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+        var popup_dbb875fe5d2127832f92b9bf2210db39 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f39ccdb86f9e4d4e6a9a43834f2e2580 = $(`<div id="html_f39ccdb86f9e4d4e6a9a43834f2e2580" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
+                popup_dbb875fe5d2127832f92b9bf2210db39.setContent(html_f39ccdb86f9e4d4e6a9a43834f2e2580);
+            
+        
+
+        circle_marker_a99df435c6bd4235e7c3145b6bf2e06d.bindPopup(popup_dbb875fe5d2127832f92b9bf2210db39)
+        ;
+
+        
+    
+    
+            var marker_3d6b2fabbec5500e68160f3c1d295442 = L.marker(
+                [13.1220704, 77.6305434],
+                {
+}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+            var icon_65741f09025b4b476d20da6c6e948e8e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f63164744b266a952f060b4721b55799 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78baaee35de9742c724109d23e9a7a56 = $(`<div id="html_78baaee35de9742c724109d23e9a7a56" style="width: 100.0%; height: 100.0%;">Traffic Signal 🚦</div>`)[0];
+                popup_f63164744b266a952f060b4721b55799.setContent(html_78baaee35de9742c724109d23e9a7a56);
+            
+        
+
+        marker_3d6b2fabbec5500e68160f3c1d295442.bindPopup(popup_f63164744b266a952f060b4721b55799)
+        ;
+
+        
+    
+    
+                marker_3d6b2fabbec5500e68160f3c1d295442.setIcon(icon_65741f09025b4b476d20da6c6e948e8e);
+            
+    
+            var marker_23551c43cc43f39ddb5ae230afdff1db = L.marker(
+                [13.1222083, 77.6307811],
+                {
+}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+            var icon_efc4cbcc90da08781f8f23daf96dd314 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d103899849d0049c3c8bda0cacfdd71 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_58cb07a71c0507c10cdc951b2c76ef6d = $(`<div id="html_58cb07a71c0507c10cdc951b2c76ef6d" style="width: 100.0%; height: 100.0%;">Traffic Signal 🚦</div>`)[0];
+                popup_8d103899849d0049c3c8bda0cacfdd71.setContent(html_58cb07a71c0507c10cdc951b2c76ef6d);
+            
+        
+
+        marker_23551c43cc43f39ddb5ae230afdff1db.bindPopup(popup_8d103899849d0049c3c8bda0cacfdd71)
+        ;
+
+        
+    
+    
+                marker_23551c43cc43f39ddb5ae230afdff1db.setIcon(icon_efc4cbcc90da08781f8f23daf96dd314);
+            
+    
+            var marker_0ff646e42a59025586f36b1c6c4b0b67 = L.marker(
+                [13.1223335, 77.6305338],
+                {
+}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+            var icon_e6979d5b539966f62cc58be0439189e5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d0157ed8f8d5e35e28123020d13cf211 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2796d03a8287a0f05d0867a455bad0c8 = $(`<div id="html_2796d03a8287a0f05d0867a455bad0c8" style="width: 100.0%; height: 100.0%;">Traffic Signal 🚦</div>`)[0];
+                popup_d0157ed8f8d5e35e28123020d13cf211.setContent(html_2796d03a8287a0f05d0867a455bad0c8);
+            
+        
+
+        marker_0ff646e42a59025586f36b1c6c4b0b67.bindPopup(popup_d0157ed8f8d5e35e28123020d13cf211)
+        ;
+
+        
+    
+    
+                marker_0ff646e42a59025586f36b1c6c4b0b67.setIcon(icon_e6979d5b539966f62cc58be0439189e5);
+            
+    
+            var marker_55b0bdb3d680facc10f639de2f13e039 = L.marker(
+                [13.1222587, 77.6303079],
+                {
+}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+            var icon_4cb005092e5e1cef6da433fd42c9c272 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cf0d0009914d4e3bcaa7c7cb75a93ea3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_99885d70312d185c66ec9e2b7a618e1c = $(`<div id="html_99885d70312d185c66ec9e2b7a618e1c" style="width: 100.0%; height: 100.0%;">Traffic Signal 🚦</div>`)[0];
+                popup_cf0d0009914d4e3bcaa7c7cb75a93ea3.setContent(html_99885d70312d185c66ec9e2b7a618e1c);
+            
+        
+
+        marker_55b0bdb3d680facc10f639de2f13e039.bindPopup(popup_cf0d0009914d4e3bcaa7c7cb75a93ea3)
+        ;
+
+        
+    
+    
+                marker_55b0bdb3d680facc10f639de2f13e039.setIcon(icon_4cb005092e5e1cef6da433fd42c9c272);
+            
+    
+            var marker_ad1bae4f246e0c26d2ab717bef7b4904 = L.marker(
+                [13.1168, 77.6347],
+                {
+}
+            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+        
+    
+            var icon_6929c966992e9f0cd65716c4d0d0a500 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4df50980e3ac6531d737c5c55108886e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9f5206aea5bd9cb55656a4b8e3940bfa = $(`<div id="html_9f5206aea5bd9cb55656a4b8e3940bfa" style="width: 100.0%; height: 100.0%;">          <h3>Final Circulation Insight</h3>           <b>Recommended:</b><br>          North-West side via Bellahalli Main Road           <br><br>           <b>Avoid:</b><br>          North-West side via Bagalur Road          </div>`)[0];
+                popup_4df50980e3ac6531d737c5c55108886e.setContent(html_9f5206aea5bd9cb55656a4b8e3940bfa);
+            
+        
+
+        marker_ad1bae4f246e0c26d2ab717bef7b4904.bindPopup(popup_4df50980e3ac6531d737c5c55108886e)
+        ;
+
+        
+    
+    
+                marker_ad1bae4f246e0c26d2ab717bef7b4904.setIcon(icon_6929c966992e9f0cd65716c4d0d0a500);
+            
+</script>
+</html>

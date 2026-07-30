@@ -346,14 +346,7 @@ Current:
 
 Uses location-based proxy estimation.
 
-Future:
 
-Explore ML approaches:
-
-- Computer vision based pedestrian counting
-- CCTV/video analysis
-- Object detection models
-- Movement prediction
 
 ---
 
@@ -369,43 +362,6 @@ Machine Learning based land-use classification.
 
 ---
 
-# Future Production Architecture
-
-```text
-
-                 Frontend Application
-
-                         |
-                         v
-
-                 Cloud API Gateway
-
-                         |
-                         v
-
-                 Backend Services
-                 (FastAPI)
-
-                         |
-        ---------------------------------
-        |                               |
-
- Traffic Analysis Service        ML Services
-
-        |                               |
-
- TomTom / Maps APIs          Prediction Models
-
-
-                         |
-
-                   Database Layer
-
-                         |
-
-              Architect Dashboard
-
-```
 
 ---
 
@@ -438,7 +394,15 @@ Future Research:
 
 - ML based prediction models
 - Large-scale deployment architecture
-- Real-time monitoring pipeline
+- 
+Explore ML approaches:
+
+- Computer vision based pedestrian counting
+- CCTV/video analysis
+- Object detection models
+- Movement prediction
+  <img width="800" height="858" alt="image" src="https://github.com/user-attachments/assets/d60daa94-7129-47c8-9a95-5a9c5c6c6c46" />
+
 
 ---
 

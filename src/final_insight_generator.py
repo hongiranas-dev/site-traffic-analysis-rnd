@@ -1,5 +1,6 @@
 import json
 import os
+from live_traffic_summary import build_live_traffic_summary
 
 
 
@@ -61,6 +62,8 @@ def generate_report():
     pedestrian = load_json(
         "outputs/pedestrian_analysis.json"
     )
+
+    live_traffic = build_live_traffic_summary()
 
 
 
@@ -160,6 +163,31 @@ def generate_report():
 
         )
 
+    tomtom = live_traffic["tomtom"]
+    if tomtom["snapshot"].get("available"):
+        freshness = "fresh" if tomtom["snapshot"].get("fresh") else "stale"
+        reasons.append(
+            "TomTom "
+            + freshness
+            + " snapshot: "
+            + str(tomtom["roads_analyzed"])
+            + " roads, average congestion index "
+            + str(tomtom["average_congestion_index"])
+        )
+
+    if live_traffic["iudx"]["bmtc_live_positions"]["discovered"]:
+        bmtc = live_traffic["iudx"]["bmtc_live_positions"]
+        if bmtc["available"]:
+            reasons.append(
+                "IUDX BMTC live snapshot: "
+                + str(bmtc["vehicle_count"])
+                + " buses displayed as blue points on the dashboard"
+            )
+        else:
+            reasons.append(
+                "IUDX BMTC live-position feed discovered; awaiting authenticated collection"
+            )
+
 
 
 
@@ -257,7 +285,9 @@ def generate_report():
         "reasons": reasons,
 
 
-        "suggestions": suggestions
+        "suggestions": suggestions,
+
+        "live_traffic": live_traffic
 
     }
 

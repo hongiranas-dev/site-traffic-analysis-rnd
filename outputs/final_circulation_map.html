@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_6239d0ababcac38230a2cb47e31fa732 {
+                #map_6a6b6ed103ef31810720eed50640b34a {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,14 +54,27 @@
 <body>
     
     
-            <div class="folium-map" id="map_6239d0ababcac38230a2cb47e31fa732" ></div>
+    <div style="position: fixed; top: 12px; right: 12px; z-index: 1000;
+                width: 280px; background: white; border: 2px solid #555;
+                border-radius: 7px; padding: 12px; font-size: 13px; line-height: 1.35;">
+      <b style="font-size: 15px;">Site Access Summary</b><br><br>
+      <b>Recommended:</b> North-West side via Bellahalli Main Road<br>
+      <b>Avoid:</b> North-West side via Bagalur Road<br><br>
+      <b>Live traffic:</b> TomTom index 1.19<br>
+      <b>BMTC / IUDX:</b> Awaiting BMTC snapshot<br><br>
+      <b>Key risk:</b> Bagalur Road has comparatively higher circulation risk<br><br>
+      <b>Design action:</b> Separate pedestrian and vehicle access
+    </div>
+    
+    
+            <div class="folium-map" id="map_6a6b6ed103ef31810720eed50640b34a" ></div>
         
 </body>
 <script>
     
     
-            var map_6239d0ababcac38230a2cb47e31fa732 = L.map(
-                "map_6239d0ababcac38230a2cb47e31fa732",
+            var map_6a6b6ed103ef31810720eed50640b34a = L.map(
+                "map_6a6b6ed103ef31810720eed50640b34a",
                 {
                     center: [13.1168, 77.6347],
                     crs: L.CRS.EPSG3857,
@@ -78,14 +91,14 @@
 
         
     
-            var tile_layer_7501c1f3b2a6149a78332e2897c10d38 = L.tileLayer(
-                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+            var tile_layer_9daf2441e4841db2defd35f0f1deba3e = L.tileLayer(
+                "https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=ZoImyXwNAvz4ogL1Ucmc",
                 {
   "minZoom": 0,
-  "maxZoom": 19,
-  "maxNativeZoom": 19,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
   "noWrap": false,
-  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "attribution": "\u0026copy; MapTiler \u0026copy; OpenStreetMap contributors",
   "subdomains": "abc",
   "detectRetina": false,
   "tms": false,
@@ -95,17 +108,17 @@
             );
         
     
-            tile_layer_7501c1f3b2a6149a78332e2897c10d38.addTo(map_6239d0ababcac38230a2cb47e31fa732);
+            tile_layer_9daf2441e4841db2defd35f0f1deba3e.addTo(map_6a6b6ed103ef31810720eed50640b34a);
         
     
-            var marker_7c6f62265c258ce7fc07fcce0309f220 = L.marker(
+            var marker_483fb54c76976badd58cd15ac911403a = L.marker(
                 [13.1168, 77.6347],
                 {
 }
-            ).addTo(map_6239d0ababcac38230a2cb47e31fa732);
+            ).addTo(map_6a6b6ed103ef31810720eed50640b34a);
         
     
-            var icon_2d5f3cbb7933fbd52349b66708644d61 = L.AwesomeMarkers.icon(
+            var icon_07d29ad8b4129313c4c87f2dd4c4caaa = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -116,62 +129,24 @@
             );
         
     
-        var popup_5521c571b2cfc0ef5bbf4ba504a0ce8a = L.popup({
+        var popup_aa37b05ffa05e14654c5a5303f9ebca1 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_1358248ba05df3bd1bb95efb06cf8814 = $(`<div id="html_1358248ba05df3bd1bb95efb06cf8814" style="width: 100.0%; height: 100.0%;">Project Site</div>`)[0];
-                popup_5521c571b2cfc0ef5bbf4ba504a0ce8a.setContent(html_1358248ba05df3bd1bb95efb06cf8814);
+                var html_dfc1478a7f067aaa20aa9e17e99ca213 = $(`<div id="html_dfc1478a7f067aaa20aa9e17e99ca213" style="width: 100.0%; height: 100.0%;">Project Site</div>`)[0];
+                popup_aa37b05ffa05e14654c5a5303f9ebca1.setContent(html_dfc1478a7f067aaa20aa9e17e99ca213);
             
         
 
-        marker_7c6f62265c258ce7fc07fcce0309f220.bindPopup(popup_5521c571b2cfc0ef5bbf4ba504a0ce8a)
+        marker_483fb54c76976badd58cd15ac911403a.bindPopup(popup_aa37b05ffa05e14654c5a5303f9ebca1)
         ;
 
         
     
     
-                marker_7c6f62265c258ce7fc07fcce0309f220.setIcon(icon_2d5f3cbb7933fbd52349b66708644d61);
-            
-    
-            var marker_87a5303c6be7a78a27fd50c0736ad002 = L.marker(
-                [13.1168, 77.6347],
-                {
-}
-            ).addTo(map_6239d0ababcac38230a2cb47e31fa732);
-        
-    
-            var icon_0aa17206bbf9e084183da5fcf16fe2a5 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "green",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_522f799795b8dd7a612f58698f55f53f = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_29ee043d6ae4f3bcdbd0aa48320695ed = $(`<div id="html_29ee043d6ae4f3bcdbd0aa48320695ed" style="width: 100.0%; height: 100.0%;">      <h3>Site Circulation Report</h3>       <b>Recommended Entry:</b><br>      North-West side via Bellahalli Main Road      <br><br>       <b>Avoid Entry:</b><br>      North-West side via Bagalur Road       <br><br>       <b>Reasons:</b><br>      Bagalur Road has comparatively higher circulation risk<br>COMMERCIAL land-use increases movement demand<br>4 nearby signals may create vehicle queues<br>HIGH PEDESTRIAN ACTIVITY requires pedestrian planning       <br><br>       <b>Suggestions:</b><br>      Separate pedestrian and vehicle access<br>Provide safe pedestrian crossing zones<br>Avoid main entry near high movement roads<br>Design access considering peak hour traffic      </div>`)[0];
-                popup_522f799795b8dd7a612f58698f55f53f.setContent(html_29ee043d6ae4f3bcdbd0aa48320695ed);
-            
-        
-
-        marker_87a5303c6be7a78a27fd50c0736ad002.bindPopup(popup_522f799795b8dd7a612f58698f55f53f)
-        ;
-
-        
-    
-    
-                marker_87a5303c6be7a78a27fd50c0736ad002.setIcon(icon_0aa17206bbf9e084183da5fcf16fe2a5);
+                marker_483fb54c76976badd58cd15ac911403a.setIcon(icon_07d29ad8b4129313c4c87f2dd4c4caaa);
             
 </script>
 </html>

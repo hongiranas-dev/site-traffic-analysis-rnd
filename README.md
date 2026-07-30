@@ -442,3 +442,75 @@ Future Research:
 
 ---
 
+# Traffic Data and MapTiler Dashboard
+
+The selected dashboard provider is MapTiler. Set `MAPTILER_API_KEY` to render
+the Folium dashboards with MapTiler Streets; without it, they fall back to the
+default OpenStreetMap layer.
+
+IUDX catalogue discovery is the first data-access step. Install the SDK and
+run the search utility:
+
+```
+pip install git+https://github.com/datakaveri/iudx-python-sdk
+python src/iudx_catalogue_search.py
+```
+
+Review `outputs/iudx_catalogue_search.json` for a Bengaluru BMTC vehicle-GPS
+or NO2 resource ID. Do not attempt to fetch live data until that resource and
+the required IUDX credentials are confirmed.
+
+TomTom remains the live-speed fallback while IUDX BMTC data is unavailable.
+The older Mapbox script remains an isolated experiment and is not the selected
+dashboard provider.
+
+## Refreshing the Final Architect Dashboard
+
+The final dashboard only changes after a fresh traffic collection. Set the
+TomTom and MapTiler keys in the same Command Prompt window, then run:
+
+```
+set TOMTOM_API_KEY=your_tomtom_key
+set MAPTILER_API_KEY=your_maptiler_key
+set IUDX_CLIENT_ID=your_iudx_client_id
+set IUDX_CLIENT_SECRET=your_iudx_client_secret
+venv\Scripts\python.exe src\refresh_live_dashboard.py
+```
+
+This refreshes `outputs/traffic_report.json`, recalculates the final report,
+and regenerates both dashboard HTML files. The source panel labels the TomTom
+snapshot as fresh for 20 minutes and otherwise marks it stale.
+
+The IUDX catalogue exposes the secure `live-bus-position-bmtc` resource. With
+IUDX client credentials, the refresh command retrieves its latest snapshot and
+plots up to 200 BMTC buses as blue points. TomTom remains the primary road
+congestion score. BMTC points are shown as a second corroborating source; a
+single snapshot is not enough to calculate bus speed, which needs consecutive
+positions for each bus.
+
+The final dashboard treats TomTom as the primary live source. The IUDX catalogue
+now confirms that the BMTC real-time vehicle-position resource exists, but it is
+secure. Register for IUDX consumer credentials and request access to resource
+`8a9c53c2-7291-454e-b173-2d9bfe893eb1` before treating BMTC data as live. The
+dashboard shows this access state explicitly and does not fabricate a combined
+score until real BMTC observations are collected.
+
+The Mapbox experiment measures:
+
+```
+Travel Time Index = live_duration / duration_typical
+```
+
+Set `MAPBOX_ACCESS_TOKEN` only if you need to run the older experiment:
+
+```
+$env:MAPBOX_ACCESS_TOKEN = "your_token"
+python src/mapbox_traffic.py
+```
+
+The corridor report is written to `outputs/mapbox_corridor_report.json`. A
+missing `duration_typical` is reported as a coverage failure rather than being
+silently treated as valid traffic data.
+
+---
+

@@ -5,12 +5,46 @@
         "Bagalur Road has comparatively higher circulation risk",
         "COMMERCIAL land-use increases movement demand",
         "4 nearby signals may create vehicle queues",
-        "HIGH PEDESTRIAN ACTIVITY requires pedestrian planning"
+        "HIGH PEDESTRIAN ACTIVITY requires pedestrian planning",
+        "TomTom fresh snapshot: 30 roads, average congestion index 1.19",
+        "IUDX BMTC live-position feed discovered; awaiting authenticated collection"
     ],
     "suggestions": [
         "Separate pedestrian and vehicle access",
         "Provide safe pedestrian crossing zones",
         "Avoid main entry near high movement roads",
         "Design access considering peak hour traffic"
-    ]
+    ],
+    "live_traffic": {
+        "tomtom": {
+            "snapshot": {
+                "available": true,
+                "collected_at_utc": "2026-07-30T07:49:54.763875+00:00",
+                "age_minutes": 0,
+                "fresh": true
+            },
+            "roads_analyzed": 30,
+            "average_current_speed_kmph": 32.3,
+            "average_congestion_index": 1.19,
+            "roads_with_slowdown": 0
+        },
+        "iudx": {
+            "catalogue_checked": true,
+            "bmtc_live_positions": {
+                "discovered": true,
+                "resource_id": "8a9c53c2-7291-454e-b173-2d9bfe893eb1",
+                "access_policy": "SECURE",
+                "available": false,
+                "vehicle_count": 0,
+                "message": "No authenticated BMTC position snapshot has been collected.",
+                "status": "Credentials required before live BMTC positions can be collected."
+            },
+            "traffic_events": {
+                "discovered": true,
+                "resource_id": "0bb06335-09b0-4209-a2b0-d27953f301b3",
+                "access_policy": "OPEN",
+                "status": "Open IUDX traffic-event resource discovered; live retrieval still needs IUDX client credentials."
+            }
+        }
+    }
 }

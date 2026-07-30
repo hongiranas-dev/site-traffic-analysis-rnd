@@ -1,10 +1,13 @@
+import os
+
 import requests
 
 
-API_KEY = "lVsmskGlS82eSW91p9f0md8I7aI4LdE0"
-
-
 def get_traffic_data(latitude, longitude):
+
+    api_key = os.getenv("TOMTOM_API_KEY")
+    if not api_key:
+        raise RuntimeError("Set TOMTOM_API_KEY in your environment before using TomTom.")
 
     url = (
         "https://api.tomtom.com/traffic/services/4/"
@@ -15,14 +18,12 @@ def get_traffic_data(latitude, longitude):
     params = {
         "point": f"{latitude},{longitude}",
         "unit": "KMPH",
-        "key": API_KEY
+        "key": api_key
     }
 
 
-    response = requests.get(
-        url,
-        params=params
-    )
+    response = requests.get(url, params=params, timeout=20)
+    response.raise_for_status()
 
 
     data = response.json()

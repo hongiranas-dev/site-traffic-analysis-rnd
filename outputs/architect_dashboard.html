@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_7f625011a3ffad86e0b05e9b63eb16f4 {
+                #map_18e7273b363b929f76dade6245256458 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,14 +54,30 @@
 <body>
     
     
-            <div class="folium-map" id="map_7f625011a3ffad86e0b05e9b63eb16f4" ></div>
+    <div style="position: fixed; top: 12px; right: 12px; z-index: 1000;
+                background: white; border: 2px solid #555; border-radius: 6px;
+                padding: 12px; max-width: 310px; font-size: 13px;">
+      <b>Live Traffic Sources</b><br><br>
+      <b>TomTom (primary)</b><br>
+      Snapshot: 0 minutes ago (fresh)<br>
+      Roads: 30<br>
+      Average speed: 32.3 km/h<br>
+      Average congestion index: 1.19<br><br>
+      <b>IUDX BMTC</b><br>
+      Credentials required before live BMTC positions can be collected.<br><br>
+      <b>IUDX Traffic Events</b><br>
+      Open IUDX traffic-event resource discovered; live retrieval still needs IUDX client credentials.
+    </div>
+    
+    
+            <div class="folium-map" id="map_18e7273b363b929f76dade6245256458" ></div>
         
 </body>
 <script>
     
     
-            var map_7f625011a3ffad86e0b05e9b63eb16f4 = L.map(
-                "map_7f625011a3ffad86e0b05e9b63eb16f4",
+            var map_18e7273b363b929f76dade6245256458 = L.map(
+                "map_18e7273b363b929f76dade6245256458",
                 {
                     center: [13.1168, 77.6347],
                     crs: L.CRS.EPSG3857,
@@ -78,14 +94,14 @@
 
         
     
-            var tile_layer_6eaa69e87cd20a4bf55f9d9372ed93cf = L.tileLayer(
-                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+            var tile_layer_21b330d82603c431fe26bf7f8cdda147 = L.tileLayer(
+                "https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=ZoImyXwNAvz4ogL1Ucmc",
                 {
   "minZoom": 0,
-  "maxZoom": 19,
-  "maxNativeZoom": 19,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
   "noWrap": false,
-  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "attribution": "\u0026copy; MapTiler \u0026copy; OpenStreetMap contributors",
   "subdomains": "abc",
   "detectRetina": false,
   "tms": false,
@@ -95,17 +111,17 @@
             );
         
     
-            tile_layer_6eaa69e87cd20a4bf55f9d9372ed93cf.addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            tile_layer_21b330d82603c431fe26bf7f8cdda147.addTo(map_18e7273b363b929f76dade6245256458);
         
     
-            var marker_a631d0c32f88b22fbc7a224d9b53e25c = L.marker(
+            var marker_3d21cdca7947314b657484170854791e = L.marker(
                 [13.1168, 77.6347],
                 {
 }
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-            var icon_404cf044b5a29ac0b330597b9ca08403 = L.AwesomeMarkers.icon(
+            var icon_a1db15361045af5725e91a890ff3f634 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -116,724 +132,724 @@
             );
         
     
-        var popup_86127391df7272225eb556f8a805a760 = L.popup({
+        var popup_6bd29e9feeef508233b7a5e588d35cf5 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_0237d80f5689ec4fa7fb800d38bc0c92 = $(`<div id="html_0237d80f5689ec4fa7fb800d38bc0c92" style="width: 100.0%; height: 100.0%;">PROJECT SITE</div>`)[0];
-                popup_86127391df7272225eb556f8a805a760.setContent(html_0237d80f5689ec4fa7fb800d38bc0c92);
+                var html_797d07e4427ccff46282a4dc7082d620 = $(`<div id="html_797d07e4427ccff46282a4dc7082d620" style="width: 100.0%; height: 100.0%;">PROJECT SITE</div>`)[0];
+                popup_6bd29e9feeef508233b7a5e588d35cf5.setContent(html_797d07e4427ccff46282a4dc7082d620);
             
         
 
-        marker_a631d0c32f88b22fbc7a224d9b53e25c.bindPopup(popup_86127391df7272225eb556f8a805a760)
+        marker_3d21cdca7947314b657484170854791e.bindPopup(popup_6bd29e9feeef508233b7a5e588d35cf5)
         ;
 
         
     
     
-                marker_a631d0c32f88b22fbc7a224d9b53e25c.setIcon(icon_404cf044b5a29ac0b330597b9ca08403);
+                marker_3d21cdca7947314b657484170854791e.setIcon(icon_a1db15361045af5725e91a890ff3f634);
             
     
-            var circle_marker_542260e8ddade93f7e8ba9d43a1aa517 = L.circleMarker(
+            var circle_marker_f25f9bd628ef75ae071022bfe2a2d67f = L.circleMarker(
                 [13.121879510860369, 77.63070904160077],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_bfbf6bde983e5b9a0a4a16b2f26e4907 = L.popup({
+        var popup_729809788289fde552250bdb67270ac2 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_71be653b235e25c4db155613d1716c27 = $(`<div id="html_71be653b235e25c4db155613d1716c27" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bellahalli Main Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_bfbf6bde983e5b9a0a4a16b2f26e4907.setContent(html_71be653b235e25c4db155613d1716c27);
+                var html_ad1a210b0ad2a84f7c4a9303fdc9ddbe = $(`<div id="html_ad1a210b0ad2a84f7c4a9303fdc9ddbe" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bellahalli Main Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 26 km/h          <br><b>Free-flow:</b> 33 km/h          <br><b>Congestion index:</b> 1.27          </div>`)[0];
+                popup_729809788289fde552250bdb67270ac2.setContent(html_ad1a210b0ad2a84f7c4a9303fdc9ddbe);
             
         
 
-        circle_marker_542260e8ddade93f7e8ba9d43a1aa517.bindPopup(popup_bfbf6bde983e5b9a0a4a16b2f26e4907)
+        circle_marker_f25f9bd628ef75ae071022bfe2a2d67f.bindPopup(popup_729809788289fde552250bdb67270ac2)
         ;
 
         
     
     
-            var circle_marker_8ca8a995acf0d7819fd21c8fda912d85 = L.circleMarker(
+            var circle_marker_d38b2fc91e4a783f535696da8f478ae6 = L.circleMarker(
                 [13.110352299999999, 77.63377095],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_14e11c15ce351ffac974afa7ae8480b5 = L.popup({
+        var popup_e70a18d21f65110521b28f6315253414 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_cfc1977bf1714a3f7b690e6f77228ba7 = $(`<div id="html_cfc1977bf1714a3f7b690e6f77228ba7" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bellahalli Main Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_14e11c15ce351ffac974afa7ae8480b5.setContent(html_cfc1977bf1714a3f7b690e6f77228ba7);
+                var html_b543710fe3b533ac9ef7f0f5df17701c = $(`<div id="html_b543710fe3b533ac9ef7f0f5df17701c" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bellahalli Main Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 26 km/h          <br><b>Free-flow:</b> 33 km/h          <br><b>Congestion index:</b> 1.27          </div>`)[0];
+                popup_e70a18d21f65110521b28f6315253414.setContent(html_b543710fe3b533ac9ef7f0f5df17701c);
             
         
 
-        circle_marker_8ca8a995acf0d7819fd21c8fda912d85.bindPopup(popup_14e11c15ce351ffac974afa7ae8480b5)
+        circle_marker_d38b2fc91e4a783f535696da8f478ae6.bindPopup(popup_e70a18d21f65110521b28f6315253414)
         ;
 
         
     
     
-            var circle_marker_ea4a17856441efaba94ca4a0aa6c8d6e = L.circleMarker(
+            var circle_marker_a9cb453cd8e3856b0c4ce96b7a7af382 = L.circleMarker(
                 [13.10992075, 77.63364899999999],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_c6c231489aa6ede1b35dce7726634c2d = L.popup({
+        var popup_9badd7ed2b5254fad930b220e1cf3c6c = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_97b9a3e24b09b74931bd20caa11a3ffa = $(`<div id="html_97b9a3e24b09b74931bd20caa11a3ffa" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Unnamed Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_c6c231489aa6ede1b35dce7726634c2d.setContent(html_97b9a3e24b09b74931bd20caa11a3ffa);
+                var html_aef3c20907eeecbbdb0d4d725b96893a = $(`<div id="html_aef3c20907eeecbbdb0d4d725b96893a" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Unnamed Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 26 km/h          <br><b>Free-flow:</b> 33 km/h          <br><b>Congestion index:</b> 1.27          </div>`)[0];
+                popup_9badd7ed2b5254fad930b220e1cf3c6c.setContent(html_aef3c20907eeecbbdb0d4d725b96893a);
             
         
 
-        circle_marker_ea4a17856441efaba94ca4a0aa6c8d6e.bindPopup(popup_c6c231489aa6ede1b35dce7726634c2d)
+        circle_marker_a9cb453cd8e3856b0c4ce96b7a7af382.bindPopup(popup_9badd7ed2b5254fad930b220e1cf3c6c)
         ;
 
         
     
     
-            var circle_marker_40fe60c5376b10433d112a50fc16aecf = L.circleMarker(
+            var circle_marker_0f73e087f3bfa8f5ec5bc08176447544 = L.circleMarker(
                 [13.10979400072864, 77.6359157912144],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_38c1b738b8ac5268288e892ef8c4f05b = L.popup({
+        var popup_cac8627c9ed8ffcc1da03be933c0a515 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_09e3aeee516ab5a75aae9276d87d4f9f = $(`<div id="html_09e3aeee516ab5a75aae9276d87d4f9f" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Unnamed Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_38c1b738b8ac5268288e892ef8c4f05b.setContent(html_09e3aeee516ab5a75aae9276d87d4f9f);
+                var html_d3da9da4356828a3bd62bbb09f992156 = $(`<div id="html_d3da9da4356828a3bd62bbb09f992156" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Unnamed Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 26 km/h          <br><b>Free-flow:</b> 33 km/h          <br><b>Congestion index:</b> 1.27          </div>`)[0];
+                popup_cac8627c9ed8ffcc1da03be933c0a515.setContent(html_d3da9da4356828a3bd62bbb09f992156);
             
         
 
-        circle_marker_40fe60c5376b10433d112a50fc16aecf.bindPopup(popup_38c1b738b8ac5268288e892ef8c4f05b)
+        circle_marker_0f73e087f3bfa8f5ec5bc08176447544.bindPopup(popup_cac8627c9ed8ffcc1da03be933c0a515)
         ;
 
         
     
     
-            var circle_marker_665471ac2b51e8a3d673f64085ee817f = L.circleMarker(
+            var circle_marker_b81063b46a01c65b8c7ce97e10c3fac6 = L.circleMarker(
                 [13.11072444816549, 77.64175284502103],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_d125d8f826407baabcf89723fc987e5e = L.popup({
+        var popup_dc91f9b7864a9e5a8b22c4d342648fd6 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_c56043880579bb99f31ef4d76c217ab4 = $(`<div id="html_c56043880579bb99f31ef4d76c217ab4" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Unnamed Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_d125d8f826407baabcf89723fc987e5e.setContent(html_c56043880579bb99f31ef4d76c217ab4);
+                var html_f78bcd3eec145646739e2e4bdc4c55f0 = $(`<div id="html_f78bcd3eec145646739e2e4bdc4c55f0" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Unnamed Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 26 km/h          <br><b>Free-flow:</b> 33 km/h          <br><b>Congestion index:</b> 1.27          </div>`)[0];
+                popup_dc91f9b7864a9e5a8b22c4d342648fd6.setContent(html_f78bcd3eec145646739e2e4bdc4c55f0);
             
         
 
-        circle_marker_665471ac2b51e8a3d673f64085ee817f.bindPopup(popup_d125d8f826407baabcf89723fc987e5e)
+        circle_marker_b81063b46a01c65b8c7ce97e10c3fac6.bindPopup(popup_dc91f9b7864a9e5a8b22c4d342648fd6)
         ;
 
         
     
     
-            var circle_marker_96563d97eb9ce19f0132723e6eb12efc = L.circleMarker(
+            var circle_marker_209755aa85edf01f70c4540da0511285 = L.circleMarker(
                 [13.121811611542055, 77.62576400274297],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_6d7b72e20b92d5028fc3ebb958e000d7 = L.popup({
+        var popup_782d5bfd95825f4dad4949ce0119a236 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_1481f817a24b3e6751159051a3f11b12 = $(`<div id="html_1481f817a24b3e6751159051a3f11b12" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_6d7b72e20b92d5028fc3ebb958e000d7.setContent(html_1481f817a24b3e6751159051a3f11b12);
+                var html_b257c133d3354453398b65b4f8ceef98 = $(`<div id="html_b257c133d3354453398b65b4f8ceef98" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 29 km/h          <br><b>Free-flow:</b> 36 km/h          <br><b>Congestion index:</b> 1.24          </div>`)[0];
+                popup_782d5bfd95825f4dad4949ce0119a236.setContent(html_b257c133d3354453398b65b4f8ceef98);
             
         
 
-        circle_marker_96563d97eb9ce19f0132723e6eb12efc.bindPopup(popup_6d7b72e20b92d5028fc3ebb958e000d7)
+        circle_marker_209755aa85edf01f70c4540da0511285.bindPopup(popup_782d5bfd95825f4dad4949ce0119a236)
         ;
 
         
     
     
-            var circle_marker_e7dc81b6a15e0de27a52a34ec91f21d5 = L.circleMarker(
+            var circle_marker_697feac9271e60c408aae847f8dad11c = L.circleMarker(
                 [13.12392075498594, 77.64182501880289],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_7063ae52ac0c9d381aacb93c1febf1cf = L.popup({
+        var popup_5a8b21702c6d3f046c990e5a2785f59e = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_bf0630427d0e69b66553105fd041dfa1 = $(`<div id="html_bf0630427d0e69b66553105fd041dfa1" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_7063ae52ac0c9d381aacb93c1febf1cf.setContent(html_bf0630427d0e69b66553105fd041dfa1);
+                var html_f35f86361d1b51e7fdec5cf9e188af6c = $(`<div id="html_f35f86361d1b51e7fdec5cf9e188af6c" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 29 km/h          <br><b>Free-flow:</b> 36 km/h          <br><b>Congestion index:</b> 1.24          </div>`)[0];
+                popup_5a8b21702c6d3f046c990e5a2785f59e.setContent(html_f35f86361d1b51e7fdec5cf9e188af6c);
             
         
 
-        circle_marker_e7dc81b6a15e0de27a52a34ec91f21d5.bindPopup(popup_7063ae52ac0c9d381aacb93c1febf1cf)
+        circle_marker_697feac9271e60c408aae847f8dad11c.bindPopup(popup_5a8b21702c6d3f046c990e5a2785f59e)
         ;
 
         
     
     
-            var circle_marker_bdbf3f92562d2d19888089cd656c510a = L.circleMarker(
+            var circle_marker_5c68b04187c97656fc7b614ae708740d = L.circleMarker(
                 [13.1237458, 77.6403187],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_311915f3746f3282c8ced9f90f624a09 = L.popup({
+        var popup_e9ebf3a8719b700ca1605802f362d9a7 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_f7a846b35b2d77dc9a663d6804aee1b4 = $(`<div id="html_f7a846b35b2d77dc9a663d6804aee1b4" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_311915f3746f3282c8ced9f90f624a09.setContent(html_f7a846b35b2d77dc9a663d6804aee1b4);
+                var html_fe9e9553f03b5e1e8b9a5f9f266ed819 = $(`<div id="html_fe9e9553f03b5e1e8b9a5f9f266ed819" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 36 km/h          <br><b>Free-flow:</b> 41 km/h          <br><b>Congestion index:</b> 1.14          </div>`)[0];
+                popup_e9ebf3a8719b700ca1605802f362d9a7.setContent(html_fe9e9553f03b5e1e8b9a5f9f266ed819);
             
         
 
-        circle_marker_bdbf3f92562d2d19888089cd656c510a.bindPopup(popup_311915f3746f3282c8ced9f90f624a09)
+        circle_marker_5c68b04187c97656fc7b614ae708740d.bindPopup(popup_e9ebf3a8719b700ca1605802f362d9a7)
         ;
 
         
     
     
-            var circle_marker_44b85d3c8b9a2c290833e5de5d7e2ffa = L.circleMarker(
+            var circle_marker_011146bfbfcacff693759265d3886f93 = L.circleMarker(
                 [13.1219117, 77.62589135],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_bd7bc73b1cfc870b896b6b1de0467ef8 = L.popup({
+        var popup_e31f1e0c169a90e92a849e04db08ac25 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_61bb24cbcf22d7c5b67cf705ffd862c3 = $(`<div id="html_61bb24cbcf22d7c5b67cf705ffd862c3" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_bd7bc73b1cfc870b896b6b1de0467ef8.setContent(html_61bb24cbcf22d7c5b67cf705ffd862c3);
+                var html_38f2269cb9a6e155e6c7073676803696 = $(`<div id="html_38f2269cb9a6e155e6c7073676803696" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 36 km/h          <br><b>Free-flow:</b> 41 km/h          <br><b>Congestion index:</b> 1.14          </div>`)[0];
+                popup_e31f1e0c169a90e92a849e04db08ac25.setContent(html_38f2269cb9a6e155e6c7073676803696);
             
         
 
-        circle_marker_44b85d3c8b9a2c290833e5de5d7e2ffa.bindPopup(popup_bd7bc73b1cfc870b896b6b1de0467ef8)
+        circle_marker_011146bfbfcacff693759265d3886f93.bindPopup(popup_e31f1e0c169a90e92a849e04db08ac25)
         ;
 
         
     
     
-            var circle_marker_d65dba99d9ae33bad634393689e51122 = L.circleMarker(
+            var circle_marker_881475c495c8b5327a9a3504452e01ba = L.circleMarker(
                 [13.122408799999999, 77.6316593],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_3e9f72a37a6ef5c413db956a0f4c68dd = L.popup({
+        var popup_08c6d612c955a23711f3851f66aab527 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_ad9ee23f8591b9caf3776d382bddfab6 = $(`<div id="html_ad9ee23f8591b9caf3776d382bddfab6" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_3e9f72a37a6ef5c413db956a0f4c68dd.setContent(html_ad9ee23f8591b9caf3776d382bddfab6);
+                var html_9a65e50300cdc0866ae366cd804cd911 = $(`<div id="html_9a65e50300cdc0866ae366cd804cd911" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 36 km/h          <br><b>Free-flow:</b> 41 km/h          <br><b>Congestion index:</b> 1.14          </div>`)[0];
+                popup_08c6d612c955a23711f3851f66aab527.setContent(html_9a65e50300cdc0866ae366cd804cd911);
             
         
 
-        circle_marker_d65dba99d9ae33bad634393689e51122.bindPopup(popup_3e9f72a37a6ef5c413db956a0f4c68dd)
+        circle_marker_881475c495c8b5327a9a3504452e01ba.bindPopup(popup_08c6d612c955a23711f3851f66aab527)
         ;
 
         
     
     
-            var circle_marker_86b11651775f9bd05f44e55491eb37d5 = L.circleMarker(
+            var circle_marker_7f915de0f6e8d46bed5ce315b2133b66 = L.circleMarker(
                 [13.12198045, 77.62675060000001],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_22f4e31777c3412666997e767016994b = L.popup({
+        var popup_7efd9691c751c998316a136dbb25035a = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_6a4a9013e8b4e79e8ab8cb513cf86ecc = $(`<div id="html_6a4a9013e8b4e79e8ab8cb513cf86ecc" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_22f4e31777c3412666997e767016994b.setContent(html_6a4a9013e8b4e79e8ab8cb513cf86ecc);
+                var html_8d0d05894166ad3a2fd42b880f534aba = $(`<div id="html_8d0d05894166ad3a2fd42b880f534aba" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 36 km/h          <br><b>Free-flow:</b> 41 km/h          <br><b>Congestion index:</b> 1.14          </div>`)[0];
+                popup_7efd9691c751c998316a136dbb25035a.setContent(html_8d0d05894166ad3a2fd42b880f534aba);
             
         
 
-        circle_marker_86b11651775f9bd05f44e55491eb37d5.bindPopup(popup_22f4e31777c3412666997e767016994b)
+        circle_marker_7f915de0f6e8d46bed5ce315b2133b66.bindPopup(popup_7efd9691c751c998316a136dbb25035a)
         ;
 
         
     
     
-            var circle_marker_f45e63e6dad4e146bd5e0de23ba480cf = L.circleMarker(
+            var circle_marker_842eaf9100bd8a28ff89aef064756b0f = L.circleMarker(
                 [13.1219593, 77.62641225],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_5ccc98013e161f28789964be41a2b898 = L.popup({
+        var popup_c8759e52da81461f2a27e5bcae0cbf56 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_166666196aac7452f87704a4c090d851 = $(`<div id="html_166666196aac7452f87704a4c090d851" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_5ccc98013e161f28789964be41a2b898.setContent(html_166666196aac7452f87704a4c090d851);
+                var html_457b65e581857a556f6401c8dd506ca3 = $(`<div id="html_457b65e581857a556f6401c8dd506ca3" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 36 km/h          <br><b>Free-flow:</b> 41 km/h          <br><b>Congestion index:</b> 1.14          </div>`)[0];
+                popup_c8759e52da81461f2a27e5bcae0cbf56.setContent(html_457b65e581857a556f6401c8dd506ca3);
             
         
 
-        circle_marker_f45e63e6dad4e146bd5e0de23ba480cf.bindPopup(popup_5ccc98013e161f28789964be41a2b898)
+        circle_marker_842eaf9100bd8a28ff89aef064756b0f.bindPopup(popup_c8759e52da81461f2a27e5bcae0cbf56)
         ;
 
         
     
     
-            var circle_marker_fd723495a8364aa7835b34f4660942f1 = L.circleMarker(
+            var circle_marker_304cf8ce1c9a86043d5923efbd488298 = L.circleMarker(
                 [13.12200855, 77.62758464999999],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_9d10e1275f4015ea194896aeec55224c = L.popup({
+        var popup_be69cdb0efee07c3de9a5c4b5060a2b6 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_38254f7c880f69fb50094ba2ff3d1361 = $(`<div id="html_38254f7c880f69fb50094ba2ff3d1361" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_9d10e1275f4015ea194896aeec55224c.setContent(html_38254f7c880f69fb50094ba2ff3d1361);
+                var html_b902e17ca9b87ee50533e707a1badf12 = $(`<div id="html_b902e17ca9b87ee50533e707a1badf12" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 36 km/h          <br><b>Free-flow:</b> 41 km/h          <br><b>Congestion index:</b> 1.14          </div>`)[0];
+                popup_be69cdb0efee07c3de9a5c4b5060a2b6.setContent(html_b902e17ca9b87ee50533e707a1badf12);
             
         
 
-        circle_marker_fd723495a8364aa7835b34f4660942f1.bindPopup(popup_9d10e1275f4015ea194896aeec55224c)
+        circle_marker_304cf8ce1c9a86043d5923efbd488298.bindPopup(popup_be69cdb0efee07c3de9a5c4b5060a2b6)
         ;
 
         
     
     
-            var circle_marker_4a5b13689057e77fd740299e74aabf84 = L.circleMarker(
+            var circle_marker_863fc8617336985de50b527fb4c1b7eb = L.circleMarker(
                 [13.121938368474217, 77.62789816195713],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_1ca98eb576d91d6124997ce1d5645bc9 = L.popup({
+        var popup_723d539525c4f12dd133348ef2f0b0ad = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_ae327bb542b148133908d197070dd804 = $(`<div id="html_ae327bb542b148133908d197070dd804" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_1ca98eb576d91d6124997ce1d5645bc9.setContent(html_ae327bb542b148133908d197070dd804);
+                var html_34fdce7b83fce217ca0163e53d2e1e86 = $(`<div id="html_34fdce7b83fce217ca0163e53d2e1e86" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 29 km/h          <br><b>Free-flow:</b> 36 km/h          <br><b>Congestion index:</b> 1.24          </div>`)[0];
+                popup_723d539525c4f12dd133348ef2f0b0ad.setContent(html_34fdce7b83fce217ca0163e53d2e1e86);
             
         
 
-        circle_marker_4a5b13689057e77fd740299e74aabf84.bindPopup(popup_1ca98eb576d91d6124997ce1d5645bc9)
+        circle_marker_863fc8617336985de50b527fb4c1b7eb.bindPopup(popup_723d539525c4f12dd133348ef2f0b0ad)
         ;
 
         
     
     
-            var circle_marker_93226fd2b7085d09416329594df1be6a = L.circleMarker(
+            var circle_marker_f879b9890e8c46898d4200d2294d1355 = L.circleMarker(
                 [13.122141232873908, 77.6292485939261],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_689197cca736ecf83525e481330dbf21 = L.popup({
+        var popup_74ef0a19bebbda8a775b57433d907b61 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_8f52da84835cdf03ba20374436829eee = $(`<div id="html_8f52da84835cdf03ba20374436829eee" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_689197cca736ecf83525e481330dbf21.setContent(html_8f52da84835cdf03ba20374436829eee);
+                var html_e40c732ac63d29f00bc3f8a0d2e5975f = $(`<div id="html_e40c732ac63d29f00bc3f8a0d2e5975f" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 36 km/h          <br><b>Free-flow:</b> 41 km/h          <br><b>Congestion index:</b> 1.14          </div>`)[0];
+                popup_74ef0a19bebbda8a775b57433d907b61.setContent(html_e40c732ac63d29f00bc3f8a0d2e5975f);
             
         
 
-        circle_marker_93226fd2b7085d09416329594df1be6a.bindPopup(popup_689197cca736ecf83525e481330dbf21)
+        circle_marker_f879b9890e8c46898d4200d2294d1355.bindPopup(popup_74ef0a19bebbda8a775b57433d907b61)
         ;
 
         
     
     
-            var circle_marker_4d80a56a4e2b7d349fef9e7e28c1c41f = L.circleMarker(
+            var circle_marker_8b319bbcb08a60fc94153a6994f3e861 = L.circleMarker(
                 [13.122235700000001, 77.63008604999999],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_3418ed9ec3db39643c07f77565118bf3 = L.popup({
+        var popup_cded8342a6c7101784db47654189a3ca = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_6c1406b3051cc0e589ec1c5e92325341 = $(`<div id="html_6c1406b3051cc0e589ec1c5e92325341" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_3418ed9ec3db39643c07f77565118bf3.setContent(html_6c1406b3051cc0e589ec1c5e92325341);
+                var html_de1f13dd45391a78d8e44933a44fd97e = $(`<div id="html_de1f13dd45391a78d8e44933a44fd97e" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 36 km/h          <br><b>Free-flow:</b> 41 km/h          <br><b>Congestion index:</b> 1.14          </div>`)[0];
+                popup_cded8342a6c7101784db47654189a3ca.setContent(html_de1f13dd45391a78d8e44933a44fd97e);
             
         
 
-        circle_marker_4d80a56a4e2b7d349fef9e7e28c1c41f.bindPopup(popup_3418ed9ec3db39643c07f77565118bf3)
+        circle_marker_8b319bbcb08a60fc94153a6994f3e861.bindPopup(popup_cded8342a6c7101784db47654189a3ca)
         ;
 
         
     
     
-            var circle_marker_3af9998fbe2eefb76f4f32a6ef51b206 = L.circleMarker(
+            var circle_marker_673f34e885610c98ab28c675fb33925c = L.circleMarker(
                 [13.1223438, 77.63103435],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_edff7b9810ed11aba2ad5207d1ef904f = L.popup({
+        var popup_bff30dda3722774ba7f4a9afda7c7bd1 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_a86a74c0550a04490e0f86a68f280a04 = $(`<div id="html_a86a74c0550a04490e0f86a68f280a04" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_edff7b9810ed11aba2ad5207d1ef904f.setContent(html_a86a74c0550a04490e0f86a68f280a04);
+                var html_6347eb4354ef43c153ed8bc465136a78 = $(`<div id="html_6347eb4354ef43c153ed8bc465136a78" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 36 km/h          <br><b>Free-flow:</b> 41 km/h          <br><b>Congestion index:</b> 1.14          </div>`)[0];
+                popup_bff30dda3722774ba7f4a9afda7c7bd1.setContent(html_6347eb4354ef43c153ed8bc465136a78);
             
         
 
-        circle_marker_3af9998fbe2eefb76f4f32a6ef51b206.bindPopup(popup_edff7b9810ed11aba2ad5207d1ef904f)
+        circle_marker_673f34e885610c98ab28c675fb33925c.bindPopup(popup_bff30dda3722774ba7f4a9afda7c7bd1)
         ;
 
         
     
     
-            var circle_marker_5f639533c66ce244dc2190d486dc8bc4 = L.circleMarker(
+            var circle_marker_4e7e76a2a75202eee9d193554f09cb4b = L.circleMarker(
                 [13.1235331, 77.6393429],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_91ffd9fd0582029f948609d4f3f3c06b = L.popup({
+        var popup_86926046a594410dc3d0afebc6e4cfa4 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_8caad395a169f449347ce156e26d8703 = $(`<div id="html_8caad395a169f449347ce156e26d8703" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Unnamed Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_91ffd9fd0582029f948609d4f3f3c06b.setContent(html_8caad395a169f449347ce156e26d8703);
+                var html_7206fa3a452f53539c8af38f8889eba2 = $(`<div id="html_7206fa3a452f53539c8af38f8889eba2" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Unnamed Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 36 km/h          <br><b>Free-flow:</b> 41 km/h          <br><b>Congestion index:</b> 1.14          </div>`)[0];
+                popup_86926046a594410dc3d0afebc6e4cfa4.setContent(html_7206fa3a452f53539c8af38f8889eba2);
             
         
 
-        circle_marker_5f639533c66ce244dc2190d486dc8bc4.bindPopup(popup_91ffd9fd0582029f948609d4f3f3c06b)
+        circle_marker_4e7e76a2a75202eee9d193554f09cb4b.bindPopup(popup_86926046a594410dc3d0afebc6e4cfa4)
         ;
 
         
     
     
-            var circle_marker_024b578979a58e4609170e3addda8ad9 = L.circleMarker(
+            var circle_marker_38a960a55199daa8245ef2567e7c6822 = L.circleMarker(
                 [13.123275682604262, 77.63806344132242],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_99f56ed0a91cda27aece9cbf50f41fd9 = L.popup({
+        var popup_92822c17a686bca1b3b6b65ddc6b5b8d = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_9c2380d23af0abe84dc6d9e3e164ef7d = $(`<div id="html_9c2380d23af0abe84dc6d9e3e164ef7d" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_99f56ed0a91cda27aece9cbf50f41fd9.setContent(html_9c2380d23af0abe84dc6d9e3e164ef7d);
+                var html_f7513cdf6799464d6c16f20c36a79118 = $(`<div id="html_f7513cdf6799464d6c16f20c36a79118" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 29 km/h          <br><b>Free-flow:</b> 36 km/h          <br><b>Congestion index:</b> 1.24          </div>`)[0];
+                popup_92822c17a686bca1b3b6b65ddc6b5b8d.setContent(html_f7513cdf6799464d6c16f20c36a79118);
             
         
 
-        circle_marker_024b578979a58e4609170e3addda8ad9.bindPopup(popup_99f56ed0a91cda27aece9cbf50f41fd9)
+        circle_marker_38a960a55199daa8245ef2567e7c6822.bindPopup(popup_92822c17a686bca1b3b6b65ddc6b5b8d)
         ;
 
         
     
     
-            var circle_marker_89db7cf7e11af1b60028f3ad66c16cc8 = L.circleMarker(
+            var circle_marker_02882c2b024bea39999ac2b66cc01e7f = L.circleMarker(
                 [13.1237904, 77.63934904999999],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_546a6435656b47b7c75cf3f1a32f31f9 = L.popup({
+        var popup_89d6d0fa4dff278e1952448b20f183b7 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_8ba03d7fec925fac4721f9239226ef0a = $(`<div id="html_8ba03d7fec925fac4721f9239226ef0a" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Unnamed Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_546a6435656b47b7c75cf3f1a32f31f9.setContent(html_8ba03d7fec925fac4721f9239226ef0a);
+                var html_88c44182f2f54df7ef16cbac81acfe69 = $(`<div id="html_88c44182f2f54df7ef16cbac81acfe69" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Unnamed Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 36 km/h          <br><b>Free-flow:</b> 41 km/h          <br><b>Congestion index:</b> 1.14          </div>`)[0];
+                popup_89d6d0fa4dff278e1952448b20f183b7.setContent(html_88c44182f2f54df7ef16cbac81acfe69);
             
         
 
-        circle_marker_89db7cf7e11af1b60028f3ad66c16cc8.bindPopup(popup_546a6435656b47b7c75cf3f1a32f31f9)
+        circle_marker_02882c2b024bea39999ac2b66cc01e7f.bindPopup(popup_89d6d0fa4dff278e1952448b20f183b7)
         ;
 
         
     
     
-            var circle_marker_77c1f7941d8141147ba7b15f2f0a0d34 = L.circleMarker(
+            var circle_marker_6b94f697c6c18f643f64f4c1073799ca = L.circleMarker(
                 [13.12360705, 77.63958615],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_0e9feed9f145f8f26a45bdfad37ff1b9 = L.popup({
+        var popup_cd914be41c33bc9dc47975c641c2e8f0 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_a270e7155ed18d54373fb453033077c6 = $(`<div id="html_a270e7155ed18d54373fb453033077c6" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_0e9feed9f145f8f26a45bdfad37ff1b9.setContent(html_a270e7155ed18d54373fb453033077c6);
+                var html_9a1bd321236af0e3a1dde364f8a9b00c = $(`<div id="html_9a1bd321236af0e3a1dde364f8a9b00c" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 36 km/h          <br><b>Free-flow:</b> 41 km/h          <br><b>Congestion index:</b> 1.14          </div>`)[0];
+                popup_cd914be41c33bc9dc47975c641c2e8f0.setContent(html_9a1bd321236af0e3a1dde364f8a9b00c);
             
         
 
-        circle_marker_77c1f7941d8141147ba7b15f2f0a0d34.bindPopup(popup_0e9feed9f145f8f26a45bdfad37ff1b9)
+        circle_marker_6b94f697c6c18f643f64f4c1073799ca.bindPopup(popup_cd914be41c33bc9dc47975c641c2e8f0)
         ;
 
         
     
     
-            var circle_marker_a9277175298a09d3abb71965f3eb24a8 = L.circleMarker(
+            var circle_marker_a2c4df7e8e41378040fa56d0e4ace456 = L.circleMarker(
                 [13.1235331, 77.6393429],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_770b2392d23179b9712176eae235f5b3 = L.popup({
+        var popup_f11b90824ac6f09f9c81f2c00474a7f5 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_7d20981dfcd619593426ad4260954bcd = $(`<div id="html_7d20981dfcd619593426ad4260954bcd" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Unnamed Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_770b2392d23179b9712176eae235f5b3.setContent(html_7d20981dfcd619593426ad4260954bcd);
+                var html_7061b46a9492272d4f392fc1ab138b57 = $(`<div id="html_7061b46a9492272d4f392fc1ab138b57" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Unnamed Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 36 km/h          <br><b>Free-flow:</b> 41 km/h          <br><b>Congestion index:</b> 1.14          </div>`)[0];
+                popup_f11b90824ac6f09f9c81f2c00474a7f5.setContent(html_7061b46a9492272d4f392fc1ab138b57);
             
         
 
-        circle_marker_a9277175298a09d3abb71965f3eb24a8.bindPopup(popup_770b2392d23179b9712176eae235f5b3)
+        circle_marker_a2c4df7e8e41378040fa56d0e4ace456.bindPopup(popup_f11b90824ac6f09f9c81f2c00474a7f5)
         ;
 
         
     
     
-            var circle_marker_0e690b2afdc64abbf0a1ed8d344ee0ea = L.circleMarker(
+            var circle_marker_56e50add6507905cb874773e3891d8d6 = L.circleMarker(
                 [13.10992075, 77.63364899999999],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_cd2c28e79c7754087b95b00fd43fef4a = L.popup({
+        var popup_bd040bacf1ad73199138f28c25288add = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_00877981fa2a260fa565675f0fa07de3 = $(`<div id="html_00877981fa2a260fa565675f0fa07de3" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Unnamed Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_cd2c28e79c7754087b95b00fd43fef4a.setContent(html_00877981fa2a260fa565675f0fa07de3);
+                var html_b3801f0eee73a5ecd8f116105765ae26 = $(`<div id="html_b3801f0eee73a5ecd8f116105765ae26" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Unnamed Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 26 km/h          <br><b>Free-flow:</b> 33 km/h          <br><b>Congestion index:</b> 1.27          </div>`)[0];
+                popup_bd040bacf1ad73199138f28c25288add.setContent(html_b3801f0eee73a5ecd8f116105765ae26);
             
         
 
-        circle_marker_0e690b2afdc64abbf0a1ed8d344ee0ea.bindPopup(popup_cd2c28e79c7754087b95b00fd43fef4a)
+        circle_marker_56e50add6507905cb874773e3891d8d6.bindPopup(popup_bd040bacf1ad73199138f28c25288add)
         ;
 
         
     
     
-            var circle_marker_44673776d62c02978fdbc7e173211339 = L.circleMarker(
+            var circle_marker_c184b096a236f25de09d29304b92568c = L.circleMarker(
                 [13.11028115466103, 77.63365062013224],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_4ad6eeb0c9bc83d4ef10c751d3b2b939 = L.popup({
+        var popup_d22da65e5989787f1e8caf3a954d2f72 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_20bec2f06d5a1550d1d11d8be85ccc67 = $(`<div id="html_20bec2f06d5a1550d1d11d8be85ccc67" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bellahalli Main Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_4ad6eeb0c9bc83d4ef10c751d3b2b939.setContent(html_20bec2f06d5a1550d1d11d8be85ccc67);
+                var html_83c2aede12d4a2faa650ddc9ea544299 = $(`<div id="html_83c2aede12d4a2faa650ddc9ea544299" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bellahalli Main Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 26 km/h          <br><b>Free-flow:</b> 33 km/h          <br><b>Congestion index:</b> 1.27          </div>`)[0];
+                popup_d22da65e5989787f1e8caf3a954d2f72.setContent(html_83c2aede12d4a2faa650ddc9ea544299);
             
         
 
-        circle_marker_44673776d62c02978fdbc7e173211339.bindPopup(popup_4ad6eeb0c9bc83d4ef10c751d3b2b939)
+        circle_marker_c184b096a236f25de09d29304b92568c.bindPopup(popup_d22da65e5989787f1e8caf3a954d2f72)
         ;
 
         
     
     
-            var circle_marker_4fd1575cf41340002f5d4c93530b0385 = L.circleMarker(
+            var circle_marker_b0051b705fdf8515d0b38be521173c65 = L.circleMarker(
                 [13.12183625, 77.62611005],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_b39161147cdf0100b0ec4ad7dc1826f1 = L.popup({
+        var popup_80b9335ba5c8948fedf640ed59d1577c = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_cefb59ede725d2aa386df27ccbe52326 = $(`<div id="html_cefb59ede725d2aa386df27ccbe52326" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_b39161147cdf0100b0ec4ad7dc1826f1.setContent(html_cefb59ede725d2aa386df27ccbe52326);
+                var html_9c8a6c7b85f4e5892a89d8c0f9d8b834 = $(`<div id="html_9c8a6c7b85f4e5892a89d8c0f9d8b834" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 29 km/h          <br><b>Free-flow:</b> 36 km/h          <br><b>Congestion index:</b> 1.24          </div>`)[0];
+                popup_80b9335ba5c8948fedf640ed59d1577c.setContent(html_9c8a6c7b85f4e5892a89d8c0f9d8b834);
             
         
 
-        circle_marker_4fd1575cf41340002f5d4c93530b0385.bindPopup(popup_b39161147cdf0100b0ec4ad7dc1826f1)
+        circle_marker_b0051b705fdf8515d0b38be521173c65.bindPopup(popup_80b9335ba5c8948fedf640ed59d1577c)
         ;
 
         
     
     
-            var circle_marker_069015cab3638cf3dd161cc8ca2c6c96 = L.circleMarker(
+            var circle_marker_55630433a2811ad55445ea04d968838e = L.circleMarker(
                 [13.12334546159691, 77.63806191494652],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_4b1bd498269e1cab3d1df49550a8d78e = L.popup({
+        var popup_7c3b2b8db22eb5149d7f3cfb5d50e0b9 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_3d5b76741243f832edca94bb62ef5b4e = $(`<div id="html_3d5b76741243f832edca94bb62ef5b4e" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_4b1bd498269e1cab3d1df49550a8d78e.setContent(html_3d5b76741243f832edca94bb62ef5b4e);
+                var html_07c34edc59f2aaf154d754298b78ada1 = $(`<div id="html_07c34edc59f2aaf154d754298b78ada1" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 36 km/h          <br><b>Free-flow:</b> 41 km/h          <br><b>Congestion index:</b> 1.14          </div>`)[0];
+                popup_7c3b2b8db22eb5149d7f3cfb5d50e0b9.setContent(html_07c34edc59f2aaf154d754298b78ada1);
             
         
 
-        circle_marker_069015cab3638cf3dd161cc8ca2c6c96.bindPopup(popup_4b1bd498269e1cab3d1df49550a8d78e)
+        circle_marker_55630433a2811ad55445ea04d968838e.bindPopup(popup_7c3b2b8db22eb5149d7f3cfb5d50e0b9)
         ;
 
         
     
     
-            var circle_marker_d3fac86f2acacfa043293d5af5fa0abf = L.circleMarker(
+            var circle_marker_d9022119336f742d500e4fe90c34fd4f = L.circleMarker(
                 [13.122522667786958, 77.63370090701544],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_a142166ab2bd5f73766668827e6bb70b = L.popup({
+        var popup_3c05e3e85228630855bcf3dad31a6c5a = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_46cd982faf409ecf01d8fef900f16f0e = $(`<div id="html_46cd982faf409ecf01d8fef900f16f0e" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_a142166ab2bd5f73766668827e6bb70b.setContent(html_46cd982faf409ecf01d8fef900f16f0e);
+                var html_ea365234856dfa6938cad446a7881427 = $(`<div id="html_ea365234856dfa6938cad446a7881427" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 29 km/h          <br><b>Free-flow:</b> 36 km/h          <br><b>Congestion index:</b> 1.24          </div>`)[0];
+                popup_3c05e3e85228630855bcf3dad31a6c5a.setContent(html_ea365234856dfa6938cad446a7881427);
             
         
 
-        circle_marker_d3fac86f2acacfa043293d5af5fa0abf.bindPopup(popup_a142166ab2bd5f73766668827e6bb70b)
+        circle_marker_d9022119336f742d500e4fe90c34fd4f.bindPopup(popup_3c05e3e85228630855bcf3dad31a6c5a)
         ;
 
         
     
     
-            var circle_marker_216afdb1b5896e80ca16f7f7bdbad299 = L.circleMarker(
+            var circle_marker_e0f56d33886d29123258d1389f693e88 = L.circleMarker(
                 [13.12198965, 77.62707385],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_3033ae7dd1a0e76029a308da881242df = L.popup({
+        var popup_99b43d9c183123b8e70aa10aa6c76dc8 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_22e08b13c6224dbc039053ee86a798bd = $(`<div id="html_22e08b13c6224dbc039053ee86a798bd" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_3033ae7dd1a0e76029a308da881242df.setContent(html_22e08b13c6224dbc039053ee86a798bd);
+                var html_6481ac8b267e0436c728101cee5c37e1 = $(`<div id="html_6481ac8b267e0436c728101cee5c37e1" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 36 km/h          <br><b>Free-flow:</b> 41 km/h          <br><b>Congestion index:</b> 1.14          </div>`)[0];
+                popup_99b43d9c183123b8e70aa10aa6c76dc8.setContent(html_6481ac8b267e0436c728101cee5c37e1);
             
         
 
-        circle_marker_216afdb1b5896e80ca16f7f7bdbad299.bindPopup(popup_3033ae7dd1a0e76029a308da881242df)
+        circle_marker_e0f56d33886d29123258d1389f693e88.bindPopup(popup_99b43d9c183123b8e70aa10aa6c76dc8)
         ;
 
         
     
     
-            var circle_marker_f91a9c05a0752a7c0cbe72033f167518 = L.circleMarker(
+            var circle_marker_61828b90ea4336952b954813c7040a49 = L.circleMarker(
                 [13.121997865447938, 77.62736004954735],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_ca256a4853cda0ba1a74ad72ea1d8145 = L.popup({
+        var popup_e1d4332740839a6728cf9d27d591e69b = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_497ac36a6c80e94f6498918213055ef5 = $(`<div id="html_497ac36a6c80e94f6498918213055ef5" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_ca256a4853cda0ba1a74ad72ea1d8145.setContent(html_497ac36a6c80e94f6498918213055ef5);
+                var html_18c65f29556f1e9424a9a20e9f2689e3 = $(`<div id="html_18c65f29556f1e9424a9a20e9f2689e3" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 36 km/h          <br><b>Free-flow:</b> 41 km/h          <br><b>Congestion index:</b> 1.14          </div>`)[0];
+                popup_e1d4332740839a6728cf9d27d591e69b.setContent(html_18c65f29556f1e9424a9a20e9f2689e3);
             
         
 
-        circle_marker_f91a9c05a0752a7c0cbe72033f167518.bindPopup(popup_ca256a4853cda0ba1a74ad72ea1d8145)
+        circle_marker_61828b90ea4336952b954813c7040a49.bindPopup(popup_e1d4332740839a6728cf9d27d591e69b)
         ;
 
         
     
     
-            var circle_marker_a99df435c6bd4235e7c3145b6bf2e06d = L.circleMarker(
+            var circle_marker_9f2559d35dd55ac9d7bd03b648187ad5 = L.circleMarker(
                 [13.122020800000001, 77.627815],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-        var popup_dbb875fe5d2127832f92b9bf2210db39 = L.popup({
+        var popup_9a7f47588287aebf933379dee01e0a3b = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_f39ccdb86f9e4d4e6a9a43834f2e2580 = $(`<div id="html_f39ccdb86f9e4d4e6a9a43834f2e2580" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          </div>`)[0];
-                popup_dbb875fe5d2127832f92b9bf2210db39.setContent(html_f39ccdb86f9e4d4e6a9a43834f2e2580);
+                var html_a4217bbd813bdd87f38c8d3a4a65221d = $(`<div id="html_a4217bbd813bdd87f38c8d3a4a65221d" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 36 km/h          <br><b>Free-flow:</b> 41 km/h          <br><b>Congestion index:</b> 1.14          </div>`)[0];
+                popup_9a7f47588287aebf933379dee01e0a3b.setContent(html_a4217bbd813bdd87f38c8d3a4a65221d);
             
         
 
-        circle_marker_a99df435c6bd4235e7c3145b6bf2e06d.bindPopup(popup_dbb875fe5d2127832f92b9bf2210db39)
+        circle_marker_9f2559d35dd55ac9d7bd03b648187ad5.bindPopup(popup_9a7f47588287aebf933379dee01e0a3b)
         ;
 
         
     
     
-            var marker_3d6b2fabbec5500e68160f3c1d295442 = L.marker(
+            var marker_68633a2ab900ed58fb483e79c0bfda30 = L.marker(
                 [13.1220704, 77.6305434],
                 {
 }
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-            var icon_65741f09025b4b476d20da6c6e948e8e = L.AwesomeMarkers.icon(
+            var icon_4442a5da84bcf3580d19f165fdf86b77 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -844,34 +860,34 @@
             );
         
     
-        var popup_f63164744b266a952f060b4721b55799 = L.popup({
+        var popup_19ada7d31e5595baa519663b45f52ef2 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_78baaee35de9742c724109d23e9a7a56 = $(`<div id="html_78baaee35de9742c724109d23e9a7a56" style="width: 100.0%; height: 100.0%;">Traffic Signal 🚦</div>`)[0];
-                popup_f63164744b266a952f060b4721b55799.setContent(html_78baaee35de9742c724109d23e9a7a56);
+                var html_e727783fef2a928a353c7aa277cfaf1a = $(`<div id="html_e727783fef2a928a353c7aa277cfaf1a" style="width: 100.0%; height: 100.0%;">Traffic Signal 🚦</div>`)[0];
+                popup_19ada7d31e5595baa519663b45f52ef2.setContent(html_e727783fef2a928a353c7aa277cfaf1a);
             
         
 
-        marker_3d6b2fabbec5500e68160f3c1d295442.bindPopup(popup_f63164744b266a952f060b4721b55799)
+        marker_68633a2ab900ed58fb483e79c0bfda30.bindPopup(popup_19ada7d31e5595baa519663b45f52ef2)
         ;
 
         
     
     
-                marker_3d6b2fabbec5500e68160f3c1d295442.setIcon(icon_65741f09025b4b476d20da6c6e948e8e);
+                marker_68633a2ab900ed58fb483e79c0bfda30.setIcon(icon_4442a5da84bcf3580d19f165fdf86b77);
             
     
-            var marker_23551c43cc43f39ddb5ae230afdff1db = L.marker(
+            var marker_8b5b860411c33aed38d26063059d06ba = L.marker(
                 [13.1222083, 77.6307811],
                 {
 }
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-            var icon_efc4cbcc90da08781f8f23daf96dd314 = L.AwesomeMarkers.icon(
+            var icon_225a409f43a410a1a7f8c6b45e9f2c89 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -882,34 +898,34 @@
             );
         
     
-        var popup_8d103899849d0049c3c8bda0cacfdd71 = L.popup({
+        var popup_3d74a667df3e72209712f59c36e3030f = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_58cb07a71c0507c10cdc951b2c76ef6d = $(`<div id="html_58cb07a71c0507c10cdc951b2c76ef6d" style="width: 100.0%; height: 100.0%;">Traffic Signal 🚦</div>`)[0];
-                popup_8d103899849d0049c3c8bda0cacfdd71.setContent(html_58cb07a71c0507c10cdc951b2c76ef6d);
+                var html_95afe2a6de7cbb580af4c745b143bb19 = $(`<div id="html_95afe2a6de7cbb580af4c745b143bb19" style="width: 100.0%; height: 100.0%;">Traffic Signal 🚦</div>`)[0];
+                popup_3d74a667df3e72209712f59c36e3030f.setContent(html_95afe2a6de7cbb580af4c745b143bb19);
             
         
 
-        marker_23551c43cc43f39ddb5ae230afdff1db.bindPopup(popup_8d103899849d0049c3c8bda0cacfdd71)
+        marker_8b5b860411c33aed38d26063059d06ba.bindPopup(popup_3d74a667df3e72209712f59c36e3030f)
         ;
 
         
     
     
-                marker_23551c43cc43f39ddb5ae230afdff1db.setIcon(icon_efc4cbcc90da08781f8f23daf96dd314);
+                marker_8b5b860411c33aed38d26063059d06ba.setIcon(icon_225a409f43a410a1a7f8c6b45e9f2c89);
             
     
-            var marker_0ff646e42a59025586f36b1c6c4b0b67 = L.marker(
+            var marker_c9039dce34cc6428f83dc4dc469bc8df = L.marker(
                 [13.1223335, 77.6305338],
                 {
 }
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-            var icon_e6979d5b539966f62cc58be0439189e5 = L.AwesomeMarkers.icon(
+            var icon_87532a58c21203eb1c08b01c77197034 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -920,34 +936,34 @@
             );
         
     
-        var popup_d0157ed8f8d5e35e28123020d13cf211 = L.popup({
+        var popup_aaa36c57924bc3783deb1baf1b4369d8 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_2796d03a8287a0f05d0867a455bad0c8 = $(`<div id="html_2796d03a8287a0f05d0867a455bad0c8" style="width: 100.0%; height: 100.0%;">Traffic Signal 🚦</div>`)[0];
-                popup_d0157ed8f8d5e35e28123020d13cf211.setContent(html_2796d03a8287a0f05d0867a455bad0c8);
+                var html_09632f0c31700681c6721a41b3c53510 = $(`<div id="html_09632f0c31700681c6721a41b3c53510" style="width: 100.0%; height: 100.0%;">Traffic Signal 🚦</div>`)[0];
+                popup_aaa36c57924bc3783deb1baf1b4369d8.setContent(html_09632f0c31700681c6721a41b3c53510);
             
         
 
-        marker_0ff646e42a59025586f36b1c6c4b0b67.bindPopup(popup_d0157ed8f8d5e35e28123020d13cf211)
+        marker_c9039dce34cc6428f83dc4dc469bc8df.bindPopup(popup_aaa36c57924bc3783deb1baf1b4369d8)
         ;
 
         
     
     
-                marker_0ff646e42a59025586f36b1c6c4b0b67.setIcon(icon_e6979d5b539966f62cc58be0439189e5);
+                marker_c9039dce34cc6428f83dc4dc469bc8df.setIcon(icon_87532a58c21203eb1c08b01c77197034);
             
     
-            var marker_55b0bdb3d680facc10f639de2f13e039 = L.marker(
+            var marker_b8f52bb18a3e98096f9143389d5a7d06 = L.marker(
                 [13.1222587, 77.6303079],
                 {
 }
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-            var icon_4cb005092e5e1cef6da433fd42c9c272 = L.AwesomeMarkers.icon(
+            var icon_4fbc849a4bdb1d356ab3ae8ec31ed521 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -958,34 +974,34 @@
             );
         
     
-        var popup_cf0d0009914d4e3bcaa7c7cb75a93ea3 = L.popup({
+        var popup_0944a7f575b64539cefb30ab40054b1d = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_99885d70312d185c66ec9e2b7a618e1c = $(`<div id="html_99885d70312d185c66ec9e2b7a618e1c" style="width: 100.0%; height: 100.0%;">Traffic Signal 🚦</div>`)[0];
-                popup_cf0d0009914d4e3bcaa7c7cb75a93ea3.setContent(html_99885d70312d185c66ec9e2b7a618e1c);
+                var html_7c01f6b5f3ac25d37f825536ffec90d7 = $(`<div id="html_7c01f6b5f3ac25d37f825536ffec90d7" style="width: 100.0%; height: 100.0%;">Traffic Signal 🚦</div>`)[0];
+                popup_0944a7f575b64539cefb30ab40054b1d.setContent(html_7c01f6b5f3ac25d37f825536ffec90d7);
             
         
 
-        marker_55b0bdb3d680facc10f639de2f13e039.bindPopup(popup_cf0d0009914d4e3bcaa7c7cb75a93ea3)
+        marker_b8f52bb18a3e98096f9143389d5a7d06.bindPopup(popup_0944a7f575b64539cefb30ab40054b1d)
         ;
 
         
     
     
-                marker_55b0bdb3d680facc10f639de2f13e039.setIcon(icon_4cb005092e5e1cef6da433fd42c9c272);
+                marker_b8f52bb18a3e98096f9143389d5a7d06.setIcon(icon_4fbc849a4bdb1d356ab3ae8ec31ed521);
             
     
-            var marker_ad1bae4f246e0c26d2ab717bef7b4904 = L.marker(
+            var marker_78e1e1f0022e2a5298ff7469fd573698 = L.marker(
                 [13.1168, 77.6347],
                 {
 }
-            ).addTo(map_7f625011a3ffad86e0b05e9b63eb16f4);
+            ).addTo(map_18e7273b363b929f76dade6245256458);
         
     
-            var icon_6929c966992e9f0cd65716c4d0d0a500 = L.AwesomeMarkers.icon(
+            var icon_86a719bcd27ecdd7153f10ff6ac33150 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -996,24 +1012,24 @@
             );
         
     
-        var popup_4df50980e3ac6531d737c5c55108886e = L.popup({
+        var popup_281e6a0d43c53ad28be80dd8f4363ef1 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_9f5206aea5bd9cb55656a4b8e3940bfa = $(`<div id="html_9f5206aea5bd9cb55656a4b8e3940bfa" style="width: 100.0%; height: 100.0%;">          <h3>Final Circulation Insight</h3>           <b>Recommended:</b><br>          North-West side via Bellahalli Main Road           <br><br>           <b>Avoid:</b><br>          North-West side via Bagalur Road          </div>`)[0];
-                popup_4df50980e3ac6531d737c5c55108886e.setContent(html_9f5206aea5bd9cb55656a4b8e3940bfa);
+                var html_81f23323fc041e3c0a6d024d32d9fe91 = $(`<div id="html_81f23323fc041e3c0a6d024d32d9fe91" style="width: 100.0%; height: 100.0%;">          <h3>Final Circulation Insight</h3>           <b>Recommended:</b><br>          North-West side via Bellahalli Main Road           <br><br>           <b>Avoid:</b><br>          North-West side via Bagalur Road          </div>`)[0];
+                popup_281e6a0d43c53ad28be80dd8f4363ef1.setContent(html_81f23323fc041e3c0a6d024d32d9fe91);
             
         
 
-        marker_ad1bae4f246e0c26d2ab717bef7b4904.bindPopup(popup_4df50980e3ac6531d737c5c55108886e)
+        marker_78e1e1f0022e2a5298ff7469fd573698.bindPopup(popup_281e6a0d43c53ad28be80dd8f4363ef1)
         ;
 
         
     
     
-                marker_ad1bae4f246e0c26d2ab717bef7b4904.setIcon(icon_6929c966992e9f0cd65716c4d0d0a500);
+                marker_78e1e1f0022e2a5298ff7469fd573698.setIcon(icon_86a719bcd27ecdd7153f10ff6ac33150);
             
 </script>
 </html>

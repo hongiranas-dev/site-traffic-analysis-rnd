@@ -1,6 +1,7 @@
 import json
 import folium
 import os
+from map_provider import create_map
 
 
 
@@ -37,16 +38,7 @@ def create_map():
 
 
 
-    traffic_map = folium.Map(
-
-        location=[
-            13.1168,
-            77.6347
-        ],
-
-        zoom_start=15
-
-    )
+    traffic_map = create_map([13.1168, 77.6347], zoom_start=15)
 
 
 

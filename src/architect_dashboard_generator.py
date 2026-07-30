@@ -1,6 +1,9 @@
 import folium
 import json
 import os
+from branca.element import Element
+from map_provider import create_map
+from live_traffic_summary import build_live_traffic_summary
 
 
 
@@ -15,6 +18,27 @@ def load_json(path):
     return []
 
 
+def bus_coordinates(position):
+    location = position.get("location", {})
+    if isinstance(location, dict):
+        coordinates = location.get("coordinates")
+        if isinstance(coordinates, list) and len(coordinates) >= 2:
+            return coordinates[1], coordinates[0]
+
+    coordinates = position.get("location.coordinates")
+    if isinstance(coordinates, list) and len(coordinates) >= 2:
+        return coordinates[1], coordinates[0]
+
+    return None
+
+
+def load_bmtc_positions():
+    snapshot = load_json("outputs/iudx_live_bmtc_positions.json")
+    if isinstance(snapshot, list):
+        return snapshot
+    return snapshot.get("vehicle_positions", [])
+
+
 
 
 def generate_dashboard():
@@ -27,13 +51,8 @@ def generate_dashboard():
     site_lon = 77.6347
 
 
-    dashboard = folium.Map(
-
-        location=[site_lat, site_lon],
-
-        zoom_start=15
-
-    )
+    dashboard = create_map([site_lat, site_lon], zoom_start=15)
+    live_traffic = build_live_traffic_summary()
 
 
 
@@ -93,6 +112,11 @@ def generate_dashboard():
 
 
 
+        congestion_index = (
+            road["free_flow_speed"] / road["current_speed"]
+            if road["current_speed"] > 0
+            else None
+        )
         popup = f"""
 
         <b>Road:</b>{road['road_name']}<br>
@@ -100,6 +124,12 @@ def generate_dashboard():
         <b>Risk:</b>{road['risk_level']}<br>
 
         <b>Traffic:</b>{road['traffic_status']}
+
+        <br><b>TomTom speed:</b> {road['current_speed']} km/h
+
+        <br><b>Free-flow:</b> {road['free_flow_speed']} km/h
+
+        <br><b>Congestion index:</b> {congestion_index:.2f}
 
         """
 
@@ -125,6 +155,51 @@ def generate_dashboard():
             popup=popup
 
 
+        ).add_to(dashboard)
+
+    tomtom = live_traffic["tomtom"]
+    snapshot = tomtom["snapshot"]
+    snapshot_label = (
+        f"{snapshot['age_minutes']} minutes ago ({'fresh' if snapshot['fresh'] else 'stale'})"
+        if snapshot.get("available")
+        else snapshot["message"]
+    )
+    iudx_bmtc = live_traffic["iudx"]["bmtc_live_positions"]
+    iudx_events = live_traffic["iudx"]["traffic_events"]
+    source_panel = f"""
+    <div style="position: fixed; top: 12px; right: 12px; z-index: 1000;
+                background: white; border: 2px solid #555; border-radius: 6px;
+                padding: 12px; max-width: 310px; font-size: 13px;">
+      <b>Live Traffic Sources</b><br><br>
+      <b>TomTom (primary)</b><br>
+      Snapshot: {snapshot_label}<br>
+      Roads: {tomtom['roads_analyzed']}<br>
+      Average speed: {tomtom['average_current_speed_kmph']} km/h<br>
+      Average congestion index: {tomtom['average_congestion_index']}<br><br>
+      <b>IUDX BMTC</b><br>
+      {iudx_bmtc['status']}<br><br>
+      <b>IUDX Traffic Events</b><br>
+      {iudx_events['status']}
+    </div>
+    """
+    dashboard.get_root().html.add_child(Element(source_panel))
+
+    for position in load_bmtc_positions()[:200]:
+        coordinates = bus_coordinates(position)
+        if not coordinates:
+            continue
+
+        vehicle = position.get("vehicle", {})
+        trip = position.get("trip", {})
+        vehicle_id = vehicle.get("id", position.get("vehicle.id", "Unknown"))
+        route_id = trip.get("route_id", position.get("trip.route_id", "Unknown"))
+        folium.CircleMarker(
+            location=coordinates,
+            radius=3,
+            color="blue",
+            fill=True,
+            fill_opacity=0.8,
+            popup=f"BMTC bus: {vehicle_id}<br>Route: {route_id}",
         ).add_to(dashboard)
 
 

@@ -21,7 +21,8 @@ cache/
 
 
 # OS files
-.DS_Store
-Thumbs.db
+.env
+venv/
+__pycache__/
 
 

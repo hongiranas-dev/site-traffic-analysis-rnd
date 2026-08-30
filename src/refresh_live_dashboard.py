@@ -1,6 +1,8 @@
 """Refresh the architect dashboard using a new TomTom traffic snapshot."""
-
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from architect_dashboard_generator import generate_dashboard
 from direction_analyzer import analyze_directions

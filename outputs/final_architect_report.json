@@ -1,12 +1,12 @@
 {
-    "recommended_entry": "North-West side via Bellahalli Main Road",
+    "recommended_entry": "South-East side via Unnamed Road",
     "avoid_entry": "North-West side via Bagalur Road",
     "reasons": [
         "Bagalur Road has comparatively higher circulation risk",
         "COMMERCIAL land-use increases movement demand",
         "4 nearby signals may create vehicle queues",
         "HIGH PEDESTRIAN ACTIVITY requires pedestrian planning",
-        "TomTom fresh snapshot: 30 roads, average congestion index 1.19",
+        "TomTom fresh snapshot: 30 roads, average congestion index 1.15",
         "IUDX BMTC live-position feed discovered; awaiting authenticated collection"
     ],
     "suggestions": [
@@ -19,14 +19,14 @@
         "tomtom": {
             "snapshot": {
                 "available": true,
-                "collected_at_utc": "2026-07-30T07:49:54.763875+00:00",
+                "collected_at_utc": "2026-08-30T13:13:39.147591+00:00",
                 "age_minutes": 0,
                 "fresh": true
             },
             "roads_analyzed": 30,
-            "average_current_speed_kmph": 32.3,
-            "average_congestion_index": 1.19,
-            "roads_with_slowdown": 0
+            "average_current_speed_kmph": 33.9,
+            "average_congestion_index": 1.15,
+            "roads_with_slowdown": 13
         },
         "iudx": {
             "catalogue_checked": true,

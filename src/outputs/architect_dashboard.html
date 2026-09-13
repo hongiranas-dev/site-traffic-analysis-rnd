@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ebdd886a4b3ff79cffbcb4b52473d91d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+    <div style="position: fixed; top: 12px; right: 12px; z-index: 1000;
+                background: white; border: 2px solid #555; border-radius: 6px;
+                padding: 12px; max-width: 310px; font-size: 13px;">
+      <b>Live Traffic Sources</b><br><br>
+      <b>TomTom (primary)</b><br>
+      Snapshot: 0 minutes ago (fresh)<br>
+      Roads: 5<br>
+      Average speed: 33.2 km/h<br>
+      Average congestion index: 1.12<br><br>
+      <b>IUDX BMTC</b><br>
+      BMTC live-position resource was not found in the catalogue output.<br><br>
+      <b>IUDX Traffic Events</b><br>
+      Bengaluru traffic-event resource was not found in the catalogue output.
+    </div>
+    
+    
+            <div class="folium-map" id="map_ebdd886a4b3ff79cffbcb4b52473d91d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ebdd886a4b3ff79cffbcb4b52473d91d = L.map(
+                "map_ebdd886a4b3ff79cffbcb4b52473d91d",
+                {
+                    center: [13.1168, 77.6347],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9976c1a775e8acc879fccf30f70769c5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9976c1a775e8acc879fccf30f70769c5.addTo(map_ebdd886a4b3ff79cffbcb4b52473d91d);
+        
+    
+            var marker_878c32cf3e1c66753b49ee4430948bd3 = L.marker(
+                [13.1168, 77.6347],
+                {
+}
+            ).addTo(map_ebdd886a4b3ff79cffbcb4b52473d91d);
+        
+    
+            var icon_6c0263f5019228ac4cedb46463ebe994 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_30e9b6e31b5cfdbca2a11a219889405c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9600698b7803dd597d049729d14e561 = $(`<div id="html_b9600698b7803dd597d049729d14e561" style="width: 100.0%; height: 100.0%;">PROJECT SITE</div>`)[0];
+                popup_30e9b6e31b5cfdbca2a11a219889405c.setContent(html_b9600698b7803dd597d049729d14e561);
+            
+        
+
+        marker_878c32cf3e1c66753b49ee4430948bd3.bindPopup(popup_30e9b6e31b5cfdbca2a11a219889405c)
+        ;
+
+        
+    
+    
+                marker_878c32cf3e1c66753b49ee4430948bd3.setIcon(icon_6c0263f5019228ac4cedb46463ebe994);
+            
+    
+            var circle_marker_59aaa821314541296697122b3b83d7d8 = L.circleMarker(
+                [13.114734224653981, 77.63428310102994],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ebdd886a4b3ff79cffbcb4b52473d91d);
+        
+    
+        var popup_3bf21383d0a2ecbe5e2b5493fa385b19 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_54167ef85e9795210f2ba349a278f0e4 = $(`<div id="html_54167ef85e9795210f2ba349a278f0e4" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bellahalli Main Road<br>          <b>Risk:</b>HIGH RISK<br>          <b>Traffic:</b>MEDIUM TRAFFIC          <br><b>TomTom speed:</b> 26 km/h          <br><b>Free-flow:</b> 33 km/h          <br><b>Congestion index:</b> 1.27          </div>`)[0];
+                popup_3bf21383d0a2ecbe5e2b5493fa385b19.setContent(html_54167ef85e9795210f2ba349a278f0e4);
+            
+        
+
+        circle_marker_59aaa821314541296697122b3b83d7d8.bindPopup(popup_3bf21383d0a2ecbe5e2b5493fa385b19)
+        ;
+
+        
+    
+    
+            var circle_marker_e240ab0fc7a676ffec15834df0de3801 = L.circleMarker(
+                [13.11072444816549, 77.64175284502103],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ebdd886a4b3ff79cffbcb4b52473d91d);
+        
+    
+        var popup_dbf6d7a1d24c214ee561cece2cd7afcc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_45bcc07b1347268f985c190264e3812c = $(`<div id="html_45bcc07b1347268f985c190264e3812c" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Unnamed Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>MEDIUM TRAFFIC          <br><b>TomTom speed:</b> 28 km/h          <br><b>Free-flow:</b> 33 km/h          <br><b>Congestion index:</b> 1.18          </div>`)[0];
+                popup_dbf6d7a1d24c214ee561cece2cd7afcc.setContent(html_45bcc07b1347268f985c190264e3812c);
+            
+        
+
+        circle_marker_e240ab0fc7a676ffec15834df0de3801.bindPopup(popup_dbf6d7a1d24c214ee561cece2cd7afcc)
+        ;
+
+        
+    
+    
+            var circle_marker_a1e875f0a2773c344e453b587351c638 = L.circleMarker(
+                [13.122141232873908, 77.6292485939261],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ebdd886a4b3ff79cffbcb4b52473d91d);
+        
+    
+        var popup_d9cb83fb9b4048af4fc6fa12b7079a67 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8fb1e76373f6960a213b669abb92d9cd = $(`<div id="html_8fb1e76373f6960a213b669abb92d9cd" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 40 km/h          <br><b>Free-flow:</b> 40 km/h          <br><b>Congestion index:</b> 1.00          </div>`)[0];
+                popup_d9cb83fb9b4048af4fc6fa12b7079a67.setContent(html_8fb1e76373f6960a213b669abb92d9cd);
+            
+        
+
+        circle_marker_a1e875f0a2773c344e453b587351c638.bindPopup(popup_d9cb83fb9b4048af4fc6fa12b7079a67)
+        ;
+
+        
+    
+    
+            var circle_marker_c497cd7fee25c017eac86627551f4111 = L.circleMarker(
+                [13.122522667786887, 77.63370090701495],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ebdd886a4b3ff79cffbcb4b52473d91d);
+        
+    
+        var popup_4982fc093d88c555a12472c438b34fef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_72ed9663d1a15f6c54b123a1ce750505 = $(`<div id="html_72ed9663d1a15f6c54b123a1ce750505" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Bagalur Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 32 km/h          <br><b>Free-flow:</b> 37 km/h          <br><b>Congestion index:</b> 1.16          </div>`)[0];
+                popup_4982fc093d88c555a12472c438b34fef.setContent(html_72ed9663d1a15f6c54b123a1ce750505);
+            
+        
+
+        circle_marker_c497cd7fee25c017eac86627551f4111.bindPopup(popup_4982fc093d88c555a12472c438b34fef)
+        ;
+
+        
+    
+    
+            var circle_marker_144db7352682399c378adc23de15dfca = L.circleMarker(
+                [13.122239700000002, 77.63058459999999],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ebdd886a4b3ff79cffbcb4b52473d91d);
+        
+    
+        var popup_6d6e6d388ff613d8aea538d95ac7f139 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a1eec105e7d7a871b7f9435d500e42c = $(`<div id="html_0a1eec105e7d7a871b7f9435d500e42c" style="width: 100.0%; height: 100.0%;">          <b>Road:</b>Unnamed Road<br>          <b>Risk:</b>MEDIUM RISK<br>          <b>Traffic:</b>LOW TRAFFIC          <br><b>TomTom speed:</b> 40 km/h          <br><b>Free-flow:</b> 40 km/h          <br><b>Congestion index:</b> 1.00          </div>`)[0];
+                popup_6d6e6d388ff613d8aea538d95ac7f139.setContent(html_0a1eec105e7d7a871b7f9435d500e42c);
+            
+        
+
+        circle_marker_144db7352682399c378adc23de15dfca.bindPopup(popup_6d6e6d388ff613d8aea538d95ac7f139)
+        ;
+
+        
+    
+    
+            var marker_b8c2de2c786517647a39e987d1de6e04 = L.marker(
+                [13.1168, 77.6347],
+                {
+}
+            ).addTo(map_ebdd886a4b3ff79cffbcb4b52473d91d);
+        
+    
+            var icon_34ba68764fdf0026e798e8c26854d539 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_686325c5f64ea9e88b348793aa3557e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f60d66364b8317ad019174e71d952b26 = $(`<div id="html_f60d66364b8317ad019174e71d952b26" style="width: 100.0%; height: 100.0%;">          <h3>Final Circulation Insight</h3>           <b>Recommended:</b><br>          North-West side via Bagalur Road           <br><br>           <b>Avoid:</b><br>          South-West side via Bellahalli Main Road          </div>`)[0];
+                popup_686325c5f64ea9e88b348793aa3557e2.setContent(html_f60d66364b8317ad019174e71d952b26);
+            
+        
+
+        marker_b8c2de2c786517647a39e987d1de6e04.bindPopup(popup_686325c5f64ea9e88b348793aa3557e2)
+        ;
+
+        
+    
+    
+                marker_b8c2de2c786517647a39e987d1de6e04.setIcon(icon_34ba68764fdf0026e798e8c26854d539);
+            
+</script>
+</html>

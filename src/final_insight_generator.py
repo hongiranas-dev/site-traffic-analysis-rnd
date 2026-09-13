@@ -3,7 +3,6 @@ import os
 from live_traffic_summary import build_live_traffic_summary
 
 
-
 def load_json(path):
 
     if os.path.exists(path):
@@ -13,8 +12,6 @@ def load_json(path):
             return json.load(file)
 
     return []
-
-
 
 
 def risk_value(level):
@@ -29,35 +26,26 @@ def risk_value(level):
 
     }
 
-
     return values.get(level, 2)
 
 
-
-
-
 def generate_report():
-
 
     print(
         "\n===== FINAL SITE CIRCULATION ANALYSIS ====="
     )
 
-
     directions = load_json(
         "outputs/direction_analysis.json"
     )
-
 
     zoning = load_json(
         "outputs/zoning_analysis.json"
     )
 
-
     signals = load_json(
         "outputs/traffic_signals.json"
     )
-
 
     pedestrian = load_json(
         "outputs/pedestrian_analysis.json"
@@ -66,28 +54,109 @@ def generate_report():
     live_traffic = build_live_traffic_summary()
 
 
+    # Remove duplicate road + direction combinations
+    # and ignore unnamed roads for architect-facing recommendations
+    unique_roads = {}
 
-    # sort roads safest -> riskiest
+    for road in directions:
 
+        road_name = road.get(
+            "road_name",
+            "Unnamed Road"
+        )
+
+        # Skip vague/unnamed roads
+        if (
+            not road_name
+            or str(road_name).strip().lower()
+            in ["unnamed road", "nan", "none"]
+        ):
+            continue
+
+        direction = road.get(
+            "direction",
+            "Unknown"
+        )
+
+        key = (
+            road_name,
+            direction
+        )
+
+        # Keep only the lowest-risk result for each
+        # road + direction combination
+        if key not in unique_roads:
+
+            unique_roads[key] = road
+
+        else:
+
+            current_risk = risk_value(
+                road.get(
+                    "risk_level",
+                    "MEDIUM RISK"
+                )
+            )
+
+            existing_risk = risk_value(
+                unique_roads[key].get(
+                    "risk_level",
+                    "MEDIUM RISK"
+                )
+            )
+
+            if current_risk < existing_risk:
+
+                unique_roads[key] = road
+
+
+    # Sort roads from safest to riskiest
     ranked_roads = sorted(
 
-        directions,
+        unique_roads.values(),
 
         key=lambda x: risk_value(
-
-            x["risk_level"]
-
+            x.get(
+                "risk_level",
+                "MEDIUM RISK"
+            )
         )
 
     )
 
 
+    if not ranked_roads:
 
+        print(
+            "No named road data available."
+        )
+
+        return
+
+
+    # Safest road
     best_road = ranked_roads[0]
 
+
+    # Find the riskiest road that is different
+    # from the recommended road
     worst_road = ranked_roads[-1]
 
+    for candidate in reversed(ranked_roads):
 
+        if (
+            candidate.get("road_name")
+            != best_road.get("road_name")
+
+            or
+
+            candidate.get("direction")
+            != best_road.get("direction")
+        ):
+
+            worst_road = candidate
+
+            break
 
 
     recommended_entry = (
@@ -101,7 +170,6 @@ def generate_report():
     )
 
 
-
     avoid_entry = (
 
         worst_road["direction"]
@@ -113,10 +181,7 @@ def generate_report():
     )
 
 
-
-
     reasons = [
-
 
         worst_road["road_name"]
 
@@ -125,9 +190,7 @@ def generate_report():
     ]
 
 
-
     if zoning:
-
 
         reasons.append(
 
@@ -138,9 +201,7 @@ def generate_report():
         )
 
 
-
     if signals:
-
 
         reasons.append(
 
@@ -151,9 +212,7 @@ def generate_report():
         )
 
 
-
     if pedestrian:
-
 
         reasons.append(
 
@@ -163,68 +222,95 @@ def generate_report():
 
         )
 
+
     tomtom = live_traffic["tomtom"]
+
+
     if tomtom["snapshot"].get("available"):
-        freshness = "fresh" if tomtom["snapshot"].get("fresh") else "stale"
-        reasons.append(
-            "TomTom "
-            + freshness
-            + " snapshot: "
-            + str(tomtom["roads_analyzed"])
-            + " roads, average congestion index "
-            + str(tomtom["average_congestion_index"])
+
+        freshness = (
+
+            "fresh"
+
+            if tomtom["snapshot"].get("fresh")
+
+            else "stale"
+
         )
 
+        reasons.append(
+
+            "TomTom "
+
+            + freshness
+
+            + " snapshot: "
+
+            + str(tomtom["roads_analyzed"])
+
+            + " roads, average congestion index "
+
+            + str(
+                tomtom[
+                    "average_congestion_index"
+                ]
+            )
+
+        )
+
+
     if live_traffic["iudx"]["bmtc_live_positions"]["discovered"]:
-        bmtc = live_traffic["iudx"]["bmtc_live_positions"]
+
+        bmtc = live_traffic[
+            "iudx"
+        ][
+            "bmtc_live_positions"
+        ]
+
+
         if bmtc["available"]:
+
             reasons.append(
+
                 "IUDX BMTC live snapshot: "
-                + str(bmtc["vehicle_count"])
+
+                + str(
+                    bmtc["vehicle_count"]
+                )
+
                 + " buses displayed as blue points on the dashboard"
+
             )
+
         else:
+
             reasons.append(
+
                 "IUDX BMTC live-position feed discovered; awaiting authenticated collection"
+
             )
 
 
-
-
     print(
-
         "\nRecommended Entry:"
-
     )
 
-
     print(
-
         recommended_entry
-
     )
 
 
-
     print(
-
         "\nAvoid:"
-
     )
 
-
     print(
-
         avoid_entry
-
     )
 
 
-
     print(
-
         "\nReason:"
-
     )
 
 
@@ -236,12 +322,8 @@ def generate_report():
         )
 
 
-
-
     print(
-
         "\nSuggested:"
-
     )
 
 
@@ -258,39 +340,32 @@ def generate_report():
     ]
 
 
-
     for s in suggestions:
 
-
         print(
-
             "-",
-
             s
-
         )
-
-
 
 
     final = {
 
+        "recommended_entry":
+            recommended_entry,
 
-        "recommended_entry": recommended_entry,
+        "avoid_entry":
+            avoid_entry,
 
+        "reasons":
+            reasons,
 
-        "avoid_entry": avoid_entry,
+        "suggestions":
+            suggestions,
 
-
-        "reasons": reasons,
-
-
-        "suggestions": suggestions,
-
-        "live_traffic": live_traffic
+        "live_traffic":
+            live_traffic
 
     }
-
 
 
     with open(
@@ -300,7 +375,6 @@ def generate_report():
         "w"
 
     ) as file:
-
 
         json.dump(
 
@@ -313,19 +387,11 @@ def generate_report():
         )
 
 
-
-
     print(
-
         "\nSaved outputs/final_architect_report.json"
-
     )
 
 
-
-
-
 if __name__ == "__main__":
-
 
     generate_report()

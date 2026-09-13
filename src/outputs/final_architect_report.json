@@ -1,0 +1,46 @@
+{
+    "recommended_entry": "North-West side via Bagalur Road",
+    "avoid_entry": "South-West side via Bellahalli Main Road",
+    "reasons": [
+        "Bellahalli Main Road has comparatively higher circulation risk",
+        "TomTom fresh snapshot: 5 roads, average congestion index 1.12"
+    ],
+    "suggestions": [
+        "Separate pedestrian and vehicle access",
+        "Provide safe pedestrian crossing zones",
+        "Avoid main entry near high movement roads",
+        "Design access considering peak hour traffic"
+    ],
+    "live_traffic": {
+        "tomtom": {
+            "snapshot": {
+                "available": true,
+                "collected_at_utc": "2026-09-13T11:52:10.837187+00:00",
+                "age_minutes": 0,
+                "fresh": true
+            },
+            "roads_analyzed": 5,
+            "average_current_speed_kmph": 33.2,
+            "average_congestion_index": 1.12,
+            "roads_with_slowdown": 2
+        },
+        "iudx": {
+            "catalogue_checked": false,
+            "bmtc_live_positions": {
+                "discovered": false,
+                "resource_id": null,
+                "access_policy": null,
+                "available": false,
+                "vehicle_count": 0,
+                "message": "No authenticated BMTC position snapshot has been collected.",
+                "status": "BMTC live-position resource was not found in the catalogue output."
+            },
+            "traffic_events": {
+                "discovered": false,
+                "resource_id": null,
+                "access_policy": null,
+                "status": "Bengaluru traffic-event resource was not found in the catalogue output."
+            }
+        }
+    }
+}

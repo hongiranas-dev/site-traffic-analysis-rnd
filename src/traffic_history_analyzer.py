@@ -1,5 +1,8 @@
-import json
+from dotenv import load_dotenv
+
+load_dotenv()
 import os
+import json
 from datetime import datetime
 
 import osmnx as ox
@@ -8,243 +11,106 @@ from osm_extractor import extract_roads
 from traffic_api import get_traffic_data
 
 
-
-def get_time_category():
-
-
-    current_hour = datetime.now().hour
+HISTORY_FILE = "outputs/traffic_history.json"
 
 
-    if 7 <= current_hour <= 10:
+def get_time_period():
+    hour = datetime.now().hour
 
-        return "morning_peak"
-
-
-    elif 17 <= current_hour <= 20:
-
-        return "evening_peak"
-
-
+    if 6 <= hour < 10:
+        return "MORNING"
+    elif 10 <= hour < 16:
+        return "DAY"
+    elif 16 <= hour < 20:
+        return "EVENING"
     else:
-
-        return "off_peak"
-
+        return "NIGHT"
 
 
+def analyze_traffic_history(graph):
 
-def collect_traffic_history():
-
-
-    print(
-        "\n===== PEAK / OFF-PEAK TRAFFIC COLLECTION ====="
-    )
-
-
-    graph = extract_roads()
-
-
-    nodes, edges = ox.graph_to_gdfs(
-        graph
-    )
-
+    _, edges = ox.graph_to_gdfs(graph)
 
     important_roads = [
-
         "primary",
         "secondary",
         "tertiary",
         "trunk",
         "motorway"
-
     ]
-
-
-    time_category = get_time_category()
-
 
     history_data = {}
 
+    # Load old history instead of deleting it
+    if os.path.exists(HISTORY_FILE):
+        with open(HISTORY_FILE, "r") as f:
+            history_data = json.load(f)
 
-    count = 0
-
-
+    current_period = get_time_period()
+    current_time = datetime.now().isoformat()
 
     for index, road in edges.iterrows():
 
+        road_type = road.get("highway", "unknown")
 
-        road_type = road.get(
-            "highway",
-            "unknown"
-        )
-
-
-        if isinstance(
-            road_type,
-            list
-        ):
-
+        if isinstance(road_type, list):
             road_type = road_type[0]
 
-
-
         if road_type not in important_roads:
-
             continue
 
+        road_name = road.get("name", "Unnamed Road")
 
-
-        road_name = road.get(
-            "name",
-            "Unnamed Road"
-        )
-
-
-        if str(road_name) == "nan":
-
+        if str(road_name) == "nan" or not road_name:
             road_name = "Unnamed Road"
 
+        road_name = str(road_name)
 
-
-        geometry = road[
-            "geometry"
-        ]
-
+        geometry = road["geometry"]
 
         midpoint = geometry.interpolate(
             0.5,
             normalized=True
         )
 
-
         latitude = midpoint.y
-
         longitude = midpoint.x
 
-
-
         traffic = get_traffic_data(
-
             latitude,
-
             longitude
-
         )
 
+        if road_name not in history_data:
+            history_data[road_name] = []
 
+        history_data[road_name].append({
+            "timestamp": current_time,
+            "period": current_period,
+            "traffic_status": traffic["status"],
+            "current_speed": traffic["current_speed"],
+            "free_flow_speed": traffic["free_speed"]
+        })
 
-        history_data[
-            road_name
-        ] = {
+    os.makedirs("outputs", exist_ok=True)
 
-
-            "road_type":
-
-                road_type,
-
-
-            "time_category":
-
-                time_category,
-
-
-            "collected_time":
-
-                str(
-                    datetime.now()
-                ),
-
-
-            "current_speed":
-
-                traffic[
-                    "current_speed"
-                ],
-
-
-            "free_flow_speed":
-
-                traffic[
-                    "free_speed"
-                ],
-
-
-            "traffic_status":
-
-                traffic[
-                    "status"
-                ]
-
-        }
-
-
-
-        print(
-            "\nRoad:",
-            road_name
-        )
-
-
-        print(
-            "Time:",
-            time_category
-        )
-
-
-        print(
-            "Traffic:",
-            traffic["status"]
-        )
-
-
-
-        count += 1
-
-
-        if count == 20:
-
-            break
-
-
-
-
-    os.makedirs(
-
-        "outputs",
-
-        exist_ok=True
-
-    )
-
-
-
-    with open(
-
-        "outputs/traffic_history.json",
-
-        "w"
-
-    ) as file:
-
-
+    with open(HISTORY_FILE, "w") as f:
         json.dump(
-
             history_data,
-
-            file,
-
+            f,
             indent=4
-
         )
 
-
-
-    print(
-        "\nTraffic history saved"
-    )
-
+    print("\n===== TRAFFIC HISTORY =====")
+    print("Current period:", current_period)
+    print("History saved successfully")
+    print("File:", HISTORY_FILE)
 
 
 if __name__ == "__main__":
 
+    print("Starting traffic history analysis...")
 
-    collect_traffic_history()
+    road_graph = extract_roads()
+
+    analyze_traffic_history(road_graph)

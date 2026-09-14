@@ -1,0 +1,568 @@
+{
+    "Bellahalli Main Road": [
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 33,
+            "free_flow_speed": 33
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 32,
+            "free_flow_speed": 32
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 33,
+            "free_flow_speed": 33
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 33,
+            "free_flow_speed": 33
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 33,
+            "free_flow_speed": 33
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 33,
+            "free_flow_speed": 33
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 33,
+            "free_flow_speed": 33
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 33,
+            "free_flow_speed": 33
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 32,
+            "free_flow_speed": 32
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 33,
+            "free_flow_speed": 33
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 33,
+            "free_flow_speed": 33
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 32,
+            "free_flow_speed": 32
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 33,
+            "free_flow_speed": 33
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 33,
+            "free_flow_speed": 33
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 32,
+            "free_flow_speed": 32
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 33,
+            "free_flow_speed": 33
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 32,
+            "free_flow_speed": 32
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 32,
+            "free_flow_speed": 32
+        }
+    ],
+    "Unnamed Road": [
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 33,
+            "free_flow_speed": 33
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 32,
+            "free_flow_speed": 32
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 32,
+            "free_flow_speed": 32
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 33,
+            "free_flow_speed": 33
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 32,
+            "free_flow_speed": 32
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 32,
+            "free_flow_speed": 32
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 32,
+            "free_flow_speed": 32
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 32,
+            "free_flow_speed": 32
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 32,
+            "free_flow_speed": 32
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 32,
+            "free_flow_speed": 32
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 32,
+            "free_flow_speed": 32
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 32,
+            "free_flow_speed": 32
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 33,
+            "free_flow_speed": 33
+        }
+    ],
+    "Bagalur Road": [
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 37,
+            "free_flow_speed": 37
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 37,
+            "free_flow_speed": 37
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 37,
+            "free_flow_speed": 37
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 37,
+            "free_flow_speed": 37
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 37,
+            "free_flow_speed": 37
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 37,
+            "free_flow_speed": 37
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 37,
+            "free_flow_speed": 37
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 37,
+            "free_flow_speed": 37
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 37,
+            "free_flow_speed": 37
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 37,
+            "free_flow_speed": 37
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 37,
+            "free_flow_speed": 37
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 37,
+            "free_flow_speed": 37
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 37,
+            "free_flow_speed": 37
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 40,
+            "free_flow_speed": 40
+        },
+        {
+            "timestamp": "2026-09-14T16:14:47.343764",
+            "period": "EVENING",
+            "traffic_status": "LOW TRAFFIC",
+            "current_speed": 37,
+            "free_flow_speed": 37
+        }
+    ]
+}

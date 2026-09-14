@@ -1,21 +1,16 @@
 import osmnx as ox
 import folium
 
-
-# Test site location (REVA University)
-LATITUDE = 13.1168
-LONGITUDE = 77.6347
-RADIUS = 1000  # meters
+from config import SITE_LAT, SITE_LON, SEARCH_RADIUS
 
 
 def extract_roads():
 
     print("Downloading road network...")
 
-    # Get roads within 1km
     graph = ox.graph_from_point(
-        (LATITUDE, LONGITUDE),
-        dist=RADIUS,
+        (SITE_LAT, SITE_LON),
+        dist=SEARCH_RADIUS,
         network_type="drive"
     )
 
@@ -26,15 +21,14 @@ def extract_roads():
 
 def analyze_roads(graph):
 
-    # Convert graph into tables
     nodes, edges = ox.graph_to_gdfs(graph)
 
     print("\n--- ANALYSIS ---")
-    print("Intersections:", len(nodes))  
+    print("Intersections:", len(nodes))
     print("Road segments:", len(edges))
 
     print("\nRoad Types:")
-    print(edges["highway"].value_counts()) #its classifys impo roads
+    print(edges["highway"].value_counts())
 
     return nodes, edges
 
@@ -42,11 +36,12 @@ def analyze_roads(graph):
 def create_map(edges):
 
     m = folium.Map(
-        location=[LATITUDE, LONGITUDE],
+        location=[SITE_LAT, SITE_LON],
         zoom_start=15
     )
 
     for _, road in edges.iterrows():
+
         coords = [
             (lat, lon)
             for lon, lat in road.geometry.coords
@@ -66,4 +61,3 @@ if __name__ == "__main__":
     nodes, edges = analyze_roads(road_graph)
 
     create_map(edges)
-

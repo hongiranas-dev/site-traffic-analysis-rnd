@@ -1,9 +1,7 @@
 import json
 import os
 
-
-SITE_LAT = 13.1168
-SITE_LON = 77.6347
+from config import SITE_LAT, SITE_LON, SEARCH_RADIUS
 
 
 

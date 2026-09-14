@@ -1,0 +1,146 @@
+{
+    "12.95664,77.70609": {
+        "timestamp": "2026-09-14T21:02:52.521248",
+        "data": {
+            "current_speed": 30,
+            "free_speed": 35,
+            "status": "LOW TRAFFIC"
+        }
+    },
+    "12.96225,77.71341": {
+        "timestamp": "2026-09-14T21:02:53.478939",
+        "data": {
+            "current_speed": 30,
+            "free_speed": 35,
+            "status": "LOW TRAFFIC"
+        }
+    },
+    "12.96420,77.71340": {
+        "timestamp": "2026-09-14T21:02:54.444120",
+        "data": {
+            "current_speed": 30,
+            "free_speed": 35,
+            "status": "LOW TRAFFIC"
+        }
+    },
+    "12.95658,77.70113": {
+        "timestamp": "2026-09-14T21:02:55.233299",
+        "data": {
+            "current_speed": 40,
+            "free_speed": 40,
+            "status": "LOW TRAFFIC"
+        }
+    },
+    "12.95506,77.70079": {
+        "timestamp": "2026-09-14T21:02:57.472504",
+        "data": {
+            "current_speed": 27,
+            "free_speed": 27,
+            "status": "LOW TRAFFIC"
+        }
+    },
+    "12.95584,77.70855": {
+        "timestamp": "2026-09-14T21:02:58.096864",
+        "data": {
+            "current_speed": 33,
+            "free_speed": 33,
+            "status": "LOW TRAFFIC"
+        }
+    },
+    "12.95321,77.70561": {
+        "timestamp": "2026-09-14T21:02:58.922201",
+        "data": {
+            "current_speed": 33,
+            "free_speed": 33,
+            "status": "LOW TRAFFIC"
+        }
+    },
+    "12.96411,77.70128": {
+        "timestamp": "2026-09-14T21:02:59.548777",
+        "data": {
+            "current_speed": 18,
+            "free_speed": 18,
+            "status": "LOW TRAFFIC"
+        }
+    },
+    "12.95010,77.70021": {
+        "timestamp": "2026-09-14T21:03:00.276531",
+        "data": {
+            "current_speed": 27,
+            "free_speed": 27,
+            "status": "LOW TRAFFIC"
+        }
+    },
+    "12.94822,77.69813": {
+        "timestamp": "2026-09-14T21:03:01.318061",
+        "data": {
+            "current_speed": 23,
+            "free_speed": 26,
+            "status": "LOW TRAFFIC"
+        }
+    },
+    "12.95012,77.70929": {
+        "timestamp": "2026-09-14T21:03:03.078330",
+        "data": {
+            "current_speed": 30,
+            "free_speed": 35,
+            "status": "LOW TRAFFIC"
+        }
+    },
+    "12.95666,77.70695": {
+        "timestamp": "2026-09-14T21:03:04.351829",
+        "data": {
+            "current_speed": 30,
+            "free_speed": 35,
+            "status": "LOW TRAFFIC"
+        }
+    },
+    "12.96203,77.70405": {
+        "timestamp": "2026-09-14T21:03:07.103631",
+        "data": {
+            "current_speed": 40,
+            "free_speed": 40,
+            "status": "LOW TRAFFIC"
+        }
+    },
+    "12.94991,77.71223": {
+        "timestamp": "2026-09-14T21:03:08.053162",
+        "data": {
+            "current_speed": 33,
+            "free_speed": 33,
+            "status": "LOW TRAFFIC"
+        }
+    },
+    "12.95633,77.69802": {
+        "timestamp": "2026-09-14T21:03:08.801711",
+        "data": {
+            "current_speed": 33,
+            "free_speed": 33,
+            "status": "LOW TRAFFIC"
+        }
+    },
+    "12.96157,77.70164": {
+        "timestamp": "2026-09-14T21:03:09.540514",
+        "data": {
+            "current_speed": 40,
+            "free_speed": 40,
+            "status": "LOW TRAFFIC"
+        }
+    },
+    "12.94843,77.70801": {
+        "timestamp": "2026-09-14T21:03:10.435075",
+        "data": {
+            "current_speed": 33,
+            "free_speed": 33,
+            "status": "LOW TRAFFIC"
+        }
+    },
+    "12.95688,77.70426": {
+        "timestamp": "2026-09-14T21:03:11.570902",
+        "data": {
+            "current_speed": 30,
+            "free_speed": 35,
+            "status": "LOW TRAFFIC"
+        }
+    }
+}

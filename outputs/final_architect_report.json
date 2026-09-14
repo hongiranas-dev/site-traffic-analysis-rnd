@@ -1,12 +1,12 @@
 {
-    "recommended_entry": "South-East side via Unnamed Road",
-    "avoid_entry": "North-West side via Bagalur Road",
+    "recommended_entry": "South-East side via Varthur Road",
+    "avoid_entry": "North-West side via Munekolala Underpass",
     "reasons": [
-        "Bagalur Road has comparatively higher circulation risk",
+        "Munekolala Underpass has comparatively higher circulation risk",
         "COMMERCIAL land-use increases movement demand",
         "4 nearby signals may create vehicle queues",
         "HIGH PEDESTRIAN ACTIVITY requires pedestrian planning",
-        "TomTom fresh snapshot: 30 roads, average congestion index 1.15",
+        "TomTom fresh snapshot: 18 roads, average congestion index 1.06",
         "IUDX BMTC live-position feed discovered; awaiting authenticated collection"
     ],
     "suggestions": [
@@ -19,14 +19,14 @@
         "tomtom": {
             "snapshot": {
                 "available": true,
-                "collected_at_utc": "2026-08-30T13:13:39.147591+00:00",
+                "collected_at_utc": "2026-09-14T15:33:11.592838+00:00",
                 "age_minutes": 0,
                 "fresh": true
             },
-            "roads_analyzed": 30,
-            "average_current_speed_kmph": 33.9,
-            "average_congestion_index": 1.15,
-            "roads_with_slowdown": 13
+            "roads_analyzed": 18,
+            "average_current_speed_kmph": 31.1,
+            "average_congestion_index": 1.06,
+            "roads_with_slowdown": 0
         },
         "iudx": {
             "catalogue_checked": true,

@@ -1,133 +1,55 @@
 [
     {
-        "road_name": "Bellahalli Main Road",
-        "direction": "North-West",
-        "risk_level": "HIGH RISK",
-        "recommendation": "Avoid entry here"
-    },
-    {
-        "road_name": "Bellahalli Main Road",
-        "direction": "South-West",
-        "risk_level": "HIGH RISK",
-        "recommendation": "Avoid entry here"
-    },
-    {
-        "road_name": "Unnamed Road",
-        "direction": "South-West",
-        "risk_level": "HIGH RISK",
-        "recommendation": "Avoid entry here"
-    },
-    {
-        "road_name": "Unnamed Road",
-        "direction": "South-East",
-        "risk_level": "HIGH RISK",
-        "recommendation": "Avoid entry here"
-    },
-    {
-        "road_name": "Unnamed Road",
+        "road_name": "Varthur Road",
         "direction": "South-East",
         "risk_level": "MEDIUM RISK",
         "recommendation": "Possible entry side"
     },
     {
-        "road_name": "Bagalur Road",
-        "direction": "North-West",
-        "risk_level": "HIGH RISK",
-        "recommendation": "Avoid entry here"
-    },
-    {
-        "road_name": "Bagalur Road",
-        "direction": "North-East",
-        "risk_level": "HIGH RISK",
-        "recommendation": "Avoid entry here"
-    },
-    {
-        "road_name": "Bagalur Road",
+        "road_name": "Arvind Avenue",
         "direction": "North-East",
         "risk_level": "MEDIUM RISK",
         "recommendation": "Possible entry side"
     },
     {
-        "road_name": "Bagalur Road",
-        "direction": "North-West",
-        "risk_level": "MEDIUM RISK",
-        "recommendation": "Possible entry side"
-    },
-    {
-        "road_name": "Bagalur Road",
-        "direction": "North-West",
-        "risk_level": "MEDIUM RISK",
-        "recommendation": "Possible entry side"
-    },
-    {
-        "road_name": "Bagalur Road",
-        "direction": "North-West",
-        "risk_level": "MEDIUM RISK",
-        "recommendation": "Possible entry side"
-    },
-    {
-        "road_name": "Bagalur Road",
-        "direction": "North-West",
-        "risk_level": "MEDIUM RISK",
-        "recommendation": "Possible entry side"
-    },
-    {
-        "road_name": "Bagalur Road",
-        "direction": "North-West",
-        "risk_level": "MEDIUM RISK",
-        "recommendation": "Possible entry side"
-    },
-    {
-        "road_name": "Bagalur Road",
-        "direction": "North-West",
-        "risk_level": "HIGH RISK",
-        "recommendation": "Avoid entry here"
-    },
-    {
-        "road_name": "Bagalur Road",
-        "direction": "North-West",
-        "risk_level": "MEDIUM RISK",
-        "recommendation": "Possible entry side"
-    },
-    {
-        "road_name": "Bagalur Road",
-        "direction": "North-West",
-        "risk_level": "MEDIUM RISK",
-        "recommendation": "Possible entry side"
-    },
-    {
-        "road_name": "Bagalur Road",
-        "direction": "North-West",
-        "risk_level": "MEDIUM RISK",
-        "recommendation": "Possible entry side"
-    },
-    {
-        "road_name": "Unnamed Road",
+        "road_name": "60 Feet Road",
         "direction": "North-East",
         "risk_level": "MEDIUM RISK",
         "recommendation": "Possible entry side"
     },
     {
-        "road_name": "Bagalur Road",
-        "direction": "North-East",
-        "risk_level": "HIGH RISK",
-        "recommendation": "Avoid entry here"
-    },
-    {
-        "road_name": "Unnamed Road",
-        "direction": "North-East",
+        "road_name": "Marathahalli Underpass",
+        "direction": "South-West",
         "risk_level": "MEDIUM RISK",
         "recommendation": "Possible entry side"
     },
     {
-        "road_name": "Bagalur Road",
-        "direction": "North-East",
+        "road_name": "Service Road",
+        "direction": "South-West",
         "risk_level": "MEDIUM RISK",
         "recommendation": "Possible entry side"
     },
     {
-        "road_name": "Unnamed Road",
-        "direction": "North-East",
+        "road_name": "Gandhi Nagar Main Road",
+        "direction": "South-East",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Munekolala Main Road",
+        "direction": "South-East",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "1st Main Road",
+        "direction": "North-West",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "S G R Dental College Road",
+        "direction": "South-West",
         "risk_level": "MEDIUM RISK",
         "recommendation": "Possible entry side"
     },
@@ -138,43 +60,49 @@
         "recommendation": "Possible entry side"
     },
     {
-        "road_name": "Bellahalli Main Road",
+        "road_name": "Lakshmi Narayana Temple Road",
+        "direction": "South-East",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Marathalli Bridge Service Road",
+        "direction": "South-East",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Chinnappanahalli Road",
+        "direction": "North-West",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Manjunadha Layout Main Road",
+        "direction": "South-East",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Tulsi Theatre Road",
         "direction": "South-West",
-        "risk_level": "HIGH RISK",
-        "recommendation": "Avoid entry here"
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
     },
     {
-        "road_name": "Bagalur Road",
+        "road_name": "Outer Ring Road",
         "direction": "North-West",
         "risk_level": "MEDIUM RISK",
         "recommendation": "Possible entry side"
     },
     {
-        "road_name": "Bagalur Road",
-        "direction": "North-East",
+        "road_name": "['S G R Dental College Road', 'Munekolala Main Road']",
+        "direction": "South-East",
         "risk_level": "MEDIUM RISK",
         "recommendation": "Possible entry side"
     },
     {
-        "road_name": "Bagalur Road",
-        "direction": "North-West",
-        "risk_level": "HIGH RISK",
-        "recommendation": "Avoid entry here"
-    },
-    {
-        "road_name": "Bagalur Road",
-        "direction": "North-West",
-        "risk_level": "MEDIUM RISK",
-        "recommendation": "Possible entry side"
-    },
-    {
-        "road_name": "Bagalur Road",
-        "direction": "North-West",
-        "risk_level": "MEDIUM RISK",
-        "recommendation": "Possible entry side"
-    },
-    {
-        "road_name": "Bagalur Road",
+        "road_name": "Munekolala Underpass",
         "direction": "North-West",
         "risk_level": "MEDIUM RISK",
         "recommendation": "Possible entry side"

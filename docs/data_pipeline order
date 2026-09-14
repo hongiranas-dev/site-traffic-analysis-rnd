@@ -1,0 +1,90 @@
+                         ┌──────────────────┐
+                         │    config.py     │
+                         │ Lat / Long /      │
+                         │ Search Radius    │
+                         └────────┬─────────┘
+                                  │
+                                  ▼
+                         ┌──────────────────┐
+                         │ osm_extractor.py │
+                         │ OpenStreetMap    │
+                         └────────┬─────────┘
+                                  │
+                         Road Network Graph
+                                  │
+              ┌───────────────────┼───────────────────┐
+              │                   │                   │
+              ▼                   ▼                   ▼
+   ┌──────────────────┐ ┌──────────────────┐ ┌──────────────────┐
+   │ traffic_integrator│ │ direction_analyzer│ │ conflict_visualizer│
+   │      .py         │ │      .py         │ │       .py        │
+   └────────┬─────────┘ └────────┬─────────┘ └────────┬─────────┘
+            │                    │                    │
+            │                    ▼                    ▼
+            │             Road Directions       Junction /
+            │                                  Conflict Points
+            │
+            ▼
+       ┌─────────────┐
+       │  TomTom API │
+       └──────┬──────┘
+              │
+              ▼
+       Current Traffic
+              │
+              ▼
+   ┌─────────────────────┐
+   │ traffic_risk_engine │
+   │       .py           │
+   └──────────┬──────────┘
+              │
+              ▼
+        Risk Score / Level
+              │
+              │
+              └──────────────────────┐
+                                     │
+              ┌──────────────────────┼──────────────────────┐
+              ▼                      ▼                      ▼
+   ┌──────────────────┐   ┌──────────────────┐   ┌──────────────────┐
+   │ pedestrian_      │   │ signal_analyzer  │   │ zoning_analyzer  │
+   │ estimator.py     │   │      .py         │   │      .py         │
+   └────────┬─────────┘   └────────┬─────────┘   └────────┬─────────┘
+            │                      │                      │
+            ▼                      ▼                      ▼
+     Pedestrian Data        Traffic Signals         Zone Type
+     / Activity Score                              / Multiplier
+            │                      │                      │
+            └──────────────────────┼──────────────────────┘
+                                   │
+                                   ▼
+                         ┌────────────────────┐
+                         │ Generated JSON     │
+                         │ Analysis Outputs   │
+                         └──────────┬─────────┘
+                                    │
+                                    ▼
+                         ┌────────────────────┐
+                         │ final_insight_     │
+                         │ generator.py       │
+                         └──────────┬─────────┘
+                                    │
+                                    ▼
+                         Final Entry Advice
+                         Recommended / Avoid
+                                    │
+                                    ▼
+                         ┌────────────────────┐
+                         │ final_map_         │
+                         │ generator.py       │
+                         └──────────┬─────────┘
+                                    │
+                                    ▼
+                         ┌────────────────────┐
+                         │ architect_         │
+                         │ dashboard_generator│
+                         │      .py           │
+                         └──────────┬─────────┘
+                                    │
+                                    ▼
+                         ARCHITECT DASHBOARD

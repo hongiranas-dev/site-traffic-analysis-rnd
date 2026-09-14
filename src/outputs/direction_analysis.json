@@ -1,30 +1,126 @@
 [
     {
-        "road_name": "Bellahalli Main Road",
-        "direction": "South-West",
-        "risk_level": "HIGH RISK",
-        "recommendation": "Avoid entry here"
+        "road_name": "Doddaballapur Road",
+        "direction": "North-East",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
     },
     {
         "road_name": "Unnamed Road",
+        "direction": "North-West",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Yelahanka Road",
+        "direction": "North-West",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Unnamed Road",
+        "direction": "North-West",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Yelahanka New Town Main Road",
+        "direction": "North-East",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Yelahanka Road",
+        "direction": "North-East",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "3rd B Cross Road",
+        "direction": "North-East",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "3rd B Cross",
+        "direction": "North-East",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "7th B Main Road",
+        "direction": "North-East",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "1st A Main Road",
         "direction": "South-East",
         "risk_level": "MEDIUM RISK",
         "recommendation": "Possible entry side"
     },
     {
-        "road_name": "Bagalur Road",
+        "road_name": "3rd A Cross Road",
+        "direction": "North-East",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "13th A Main",
+        "direction": "North-East",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "8th B Cross",
+        "direction": "North-East",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "6th B Main Road",
+        "direction": "North-East",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "16th B Cross Road",
         "direction": "North-West",
         "risk_level": "MEDIUM RISK",
         "recommendation": "Possible entry side"
     },
     {
-        "road_name": "Bagalur Road",
+        "road_name": "15th A Cross Road",
+        "direction": "South-East",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Oil Mill Road",
         "direction": "North-West",
         "risk_level": "MEDIUM RISK",
         "recommendation": "Possible entry side"
     },
     {
-        "road_name": "Unnamed Road",
+        "road_name": "4th Cross Road",
+        "direction": "North-West",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "1st Main Road",
+        "direction": "North-West",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "13th A Main Road",
+        "direction": "North-East",
+        "risk_level": "MEDIUM RISK",
+        "recommendation": "Possible entry side"
+    },
+    {
+        "road_name": "Mother Dairy Circle Flyover",
         "direction": "North-West",
         "risk_level": "MEDIUM RISK",
         "recommendation": "Possible entry side"

@@ -2,18 +2,14 @@ import osmnx as ox
 import json
 import os
 
+from config import SITE_LAT, SITE_LON, SEARCH_RADIUS
+
 
 def analyze_zone():
 
     print(
         "\n===== CONTEXTUAL ZONING ANALYSIS ====="
     )
-
-    # Test site coordinate (REVA)
-    latitude = 13.1168
-    longitude = 77.6347
-
-    radius = 1000
 
     tags = {
         "building": True,
@@ -24,11 +20,11 @@ def analyze_zone():
 
     features = ox.features_from_point(
         (
-            latitude,
-            longitude
+            SITE_LAT,
+            SITE_LON
         ),
         tags,
-        dist=radius
+        dist=SEARCH_RADIUS
     )
 
     residential_score = 0
@@ -39,7 +35,6 @@ def analyze_zone():
 
     for index, feature in features.iterrows():
 
-        # Prevent counting the same feature twice
         feature_id = str(index)
 
         if feature_id in counted_features:
@@ -114,7 +109,6 @@ def analyze_zone():
         ):
             commercial_score += 1
 
-
     total_score = (
         residential_score
         + commercial_score
@@ -171,7 +165,6 @@ def analyze_zone():
             zone_type = "MIXED"
             traffic_multiplier = 1.3
 
-
     result = {
 
         "zone_type": zone_type,
@@ -186,12 +179,10 @@ def analyze_zone():
 
     }
 
-
     os.makedirs(
         "outputs",
         exist_ok=True
     )
-
 
     with open(
         "outputs/zoning_analysis.json",
@@ -203,7 +194,6 @@ def analyze_zone():
             file,
             indent=4
         )
-
 
     print(
         "Zone Type:",
@@ -238,3 +228,4 @@ def analyze_zone():
 if __name__ == "__main__":
 
     analyze_zone()
+

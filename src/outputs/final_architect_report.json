@@ -1,9 +1,12 @@
 {
-    "recommended_entry": "North-West side via Bagalur Road",
-    "avoid_entry": "South-West side via Bellahalli Main Road",
+    "recommended_entry": "North-East side via Doddaballapur Road",
+    "avoid_entry": "North-West side via Mother Dairy Circle Flyover",
     "reasons": [
-        "Bellahalli Main Road has comparatively higher circulation risk",
-        "TomTom fresh snapshot: 5 roads, average congestion index 1.12"
+        "Mother Dairy Circle Flyover has comparatively higher circulation risk",
+        "COMMERCIAL land-use increases movement demand",
+        "4 nearby signals may create vehicle queues",
+        "HIGH PEDESTRIAN ACTIVITY requires pedestrian planning",
+        "TomTom fresh snapshot: 21 roads, average congestion index 1.0"
     ],
     "suggestions": [
         "Separate pedestrian and vehicle access",
@@ -15,14 +18,14 @@
         "tomtom": {
             "snapshot": {
                 "available": true,
-                "collected_at_utc": "2026-09-13T11:52:10.837187+00:00",
+                "collected_at_utc": "2026-09-14T14:58:23.726936+00:00",
                 "age_minutes": 0,
                 "fresh": true
             },
-            "roads_analyzed": 5,
-            "average_current_speed_kmph": 33.2,
-            "average_congestion_index": 1.12,
-            "roads_with_slowdown": 2
+            "roads_analyzed": 21,
+            "average_current_speed_kmph": 36.6,
+            "average_congestion_index": 1.0,
+            "roads_with_slowdown": 0
         },
         "iudx": {
             "catalogue_checked": false,

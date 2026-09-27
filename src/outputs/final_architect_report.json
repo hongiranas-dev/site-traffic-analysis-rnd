@@ -1,12 +1,12 @@
 {
-    "recommended_entry": "North-East side via Doddaballapur Road",
-    "avoid_entry": "North-West side via Mother Dairy Circle Flyover",
+    "recommended_entry": "North-West side via Yelahanka Road",
+    "avoid_entry": "North-West side via 1st Main Road",
     "reasons": [
-        "Mother Dairy Circle Flyover has comparatively higher circulation risk",
+        "1st Main Road has comparatively higher circulation risk",
         "COMMERCIAL land-use increases movement demand",
         "4 nearby signals may create vehicle queues",
         "HIGH PEDESTRIAN ACTIVITY requires pedestrian planning",
-        "TomTom fresh snapshot: 21 roads, average congestion index 1.0"
+        "TomTom fresh snapshot: 21 roads, average congestion index 1.41"
     ],
     "suggestions": [
         "Separate pedestrian and vehicle access",
@@ -18,14 +18,14 @@
         "tomtom": {
             "snapshot": {
                 "available": true,
-                "collected_at_utc": "2026-09-14T14:58:23.726936+00:00",
+                "collected_at_utc": "2026-09-17T12:53:54.850762+00:00",
                 "age_minutes": 0,
                 "fresh": true
             },
             "roads_analyzed": 21,
-            "average_current_speed_kmph": 36.6,
-            "average_congestion_index": 1.0,
-            "roads_with_slowdown": 0
+            "average_current_speed_kmph": 26.5,
+            "average_congestion_index": 1.41,
+            "roads_with_slowdown": 21
         },
         "iudx": {
             "catalogue_checked": false,

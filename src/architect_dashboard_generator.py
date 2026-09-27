@@ -319,7 +319,135 @@ def generate_dashboard():
 
     )
 
+        # =============================
+    # FASTAPI CONNECTION
+    # =============================
 
+    api_script = """
+    <script>
+
+    async function loadTrafficFromAPI() {
+        try {
+            const response = await fetch("/api/traffic");
+
+            if (!response.ok) {
+                throw new Error("Traffic API failed");
+            }
+
+            const traffic = await response.json();
+
+            console.log("Traffic data received from FastAPI:", traffic);
+
+        } catch (error) {
+            console.error("Traffic API error:", error);
+        }
+    }
+
+
+    async function loadDirectionsFromAPI() {
+        try {
+            const response = await fetch("/api/directions");
+
+            if (!response.ok) {
+                throw new Error("Directions API failed");
+            }
+
+            const directions = await response.json();
+
+            console.log("Direction data received from FastAPI:", directions);
+
+        } catch (error) {
+            console.error("Directions API error:", error);
+        }
+    }
+
+
+    async function loadSignalsFromAPI() {
+        try {
+            const response = await fetch("/api/signals");
+
+            if (!response.ok) {
+                throw new Error("Signals API failed");
+            }
+
+            const signals = await response.json();
+
+            console.log("Signal data received from FastAPI:", signals);
+
+        } catch (error) {
+            console.error("Signals API error:", error);
+        }
+    }
+
+
+    async function loadZoningFromAPI() {
+        try {
+            const response = await fetch("/api/zoning");
+
+            if (!response.ok) {
+                throw new Error("Zoning API failed");
+            }
+
+            const zoning = await response.json();
+
+            console.log("Zoning data received from FastAPI:", zoning);
+
+        } catch (error) {
+            console.error("Zoning API error:", error);
+        }
+    }
+
+
+    async function loadPedestrianFromAPI() {
+        try {
+            const response = await fetch("/api/pedestrian");
+
+            if (!response.ok) {
+                throw new Error("Pedestrian API failed");
+            }
+
+            const pedestrian = await response.json();
+
+            console.log("Pedestrian data received from FastAPI:", pedestrian);
+
+        } catch (error) {
+            console.error("Pedestrian API error:", error);
+        }
+    }
+
+
+    async function loadInsightsFromAPI() {
+        try {
+            const response = await fetch("/api/insights");
+
+            if (!response.ok) {
+                throw new Error("Insights API failed");
+            }
+
+            const insights = await response.json();
+
+            console.log("Insights received from FastAPI:", insights);
+
+        } catch (error) {
+            console.error("Insights API error:", error);
+        }
+    }
+
+
+    // Load all backend data
+    loadTrafficFromAPI();
+    loadDirectionsFromAPI();
+    loadSignalsFromAPI();
+    loadZoningFromAPI();
+    loadPedestrianFromAPI();
+    loadInsightsFromAPI();
+
+    </script>
+    """
+
+    dashboard.get_root().html.add_child(
+        Element(api_script)
+    )
 
     dashboard.save(
 

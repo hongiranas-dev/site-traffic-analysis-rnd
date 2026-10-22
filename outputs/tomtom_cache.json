@@ -142,5 +142,45 @@
             "free_speed": 35,
             "status": "LOW TRAFFIC"
         }
+    },
+    "13.11473,77.63428": {
+        "timestamp": "2026-10-07T21:54:41.031559",
+        "data": {
+            "current_speed": 33,
+            "free_speed": 33,
+            "status": "LOW TRAFFIC"
+        }
+    },
+    "13.11072,77.64175": {
+        "timestamp": "2026-10-07T21:54:42.317531",
+        "data": {
+            "current_speed": 32,
+            "free_speed": 32,
+            "status": "LOW TRAFFIC"
+        }
+    },
+    "13.12214,77.62925": {
+        "timestamp": "2026-10-07T21:54:43.185849",
+        "data": {
+            "current_speed": 41,
+            "free_speed": 41,
+            "status": "LOW TRAFFIC"
+        }
+    },
+    "13.12252,77.63370": {
+        "timestamp": "2026-10-07T21:54:43.862727",
+        "data": {
+            "current_speed": 37,
+            "free_speed": 37,
+            "status": "LOW TRAFFIC"
+        }
+    },
+    "13.12224,77.63058": {
+        "timestamp": "2026-10-07T21:54:44.555119",
+        "data": {
+            "current_speed": 41,
+            "free_speed": 41,
+            "status": "LOW TRAFFIC"
+        }
     }
 }
